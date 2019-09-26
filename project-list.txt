@@ -1,0 +1,3 @@
+eventsource
+csw-aas-js
+rsocket-websocket-client
