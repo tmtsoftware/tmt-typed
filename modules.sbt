@@ -2,7 +2,7 @@
 lazy val `tmt-typed` = project
   .in(file("."))
   .aggregate(
-    `svg_dot_js`,`rsocket-types`,`csw-aas-js`,`paper`,`prop-types`,`rsocket-websocket-client`,`rsocket-core`,`react-facade`,`keycloak-js`,`csstype`,`react-transition-group`,`node`,`react`,`eventsource`,`material-ui__core`,`react-dom`,`rsocket-flowable`,`popper_dot_js`,`p5`,`jss`,`indefinite-observable`,`material-ui__icons`
+    std, `svg_dot_js`,`rsocket-types`,`csw-aas-js`,`paper`,`prop-types`,`rsocket-websocket-client`,`rsocket-core`,`react-facade`,`keycloak-js`,`csstype`,`react-transition-group`,`node`,`react`,`eventsource`,`material-ui__core`,`react-dom`,`rsocket-flowable`,`popper_dot_js`,`p5`,`jss`,`indefinite-observable`,`material-ui__icons`
   )
 
 lazy val std = project
