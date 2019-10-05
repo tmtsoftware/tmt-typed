@@ -2,7 +2,7 @@ package typings.node.streamMod
 
 import typings.node.Anon_Chunk
 import typings.node.Error
-import typings.node.NodeJSNs.WritableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.drain
 import typings.node.nodeStrings.error
@@ -26,9 +26,11 @@ class Writable ()
       Unit
     ]
   ] = js.native
+  var destroyed: Boolean = js.native
   val writableFinished: Boolean = js.native
   val writableHighWaterMark: Double = js.native
   val writableLength: Double = js.native
+  val writableObjectMode: Boolean = js.native
   def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def _final(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
