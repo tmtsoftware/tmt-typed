@@ -1,12 +1,13 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -34,6 +35,8 @@ object tablePaginationTablePaginationActionsMod extends js.Object {
     def this(props: TablePaginationActionsProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[TablePaginationActionsProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[TablePaginationActionsProps]]
+  
 }
 

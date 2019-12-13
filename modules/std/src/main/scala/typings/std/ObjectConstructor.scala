@@ -107,7 +107,7 @@ trait ObjectConstructor
     * @param entries An iterable object that contains key-value entries for properties and methods.
     */
   @JSName("fromEntries")
-  def fromEntries_T_Intersection[T](entries: Iterable[js.Tuple2[PropertyKey, T]]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def fromEntries_T_Intersection[T](entries: Iterable[js.Tuple2[PropertyKey, T]]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in std.PropertyKey ]: T}
     */ typings.std.stdStrings.ObjectConstructor with js.Any = js.native
   /**
@@ -176,7 +176,7 @@ trait ObjectConstructor
   def seal[T](o: T): T = js.native
   def setPrototypeOf(o: js.Any): js.Any = js.native
   /**
-    * Sets the prototype of a specified object o to  object proto or null. Returns the object o.
+    * Sets the prototype of a specified object o to object proto or null. Returns the object o.
     * @param o The object to change its prototype.
     * @param proto The value of the new prototype or null.
     */

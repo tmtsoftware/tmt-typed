@@ -1,6 +1,6 @@
 package typings.react.reactMod
 
-import typings.react.EventTarget
+import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ object Touch {
     screenY: Double,
     target: EventTarget
   ): Touch = {
-    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY, identifier = identifier, pageX = pageX, pageY = pageY, screenX = screenX, screenY = screenY, target = target)
+    val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Touch]
   }

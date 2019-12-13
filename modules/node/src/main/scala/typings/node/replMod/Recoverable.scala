@@ -10,17 +10,15 @@ import scala.scalajs.js.annotation._
   *
   * @see https://nodejs.org/dist/latest-v10.x/docs/api/repl.html#repl_recoverable_errors
   */
-trait Recoverable
+@JSImport("repl", "Recoverable")
+@js.native
+class Recoverable protected ()
   extends typings.std.Error {
-  var err: Error
-}
-
-object Recoverable {
-  @scala.inline
-  def apply(err: Error, message: java.lang.String, name: java.lang.String, stack: java.lang.String = null): Recoverable = {
-    val __obj = js.Dynamic.literal(err = err, message = message, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    __obj.asInstanceOf[Recoverable]
-  }
+  def this(err: Error) = this()
+  var err: Error = js.native
+  /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
 }
 

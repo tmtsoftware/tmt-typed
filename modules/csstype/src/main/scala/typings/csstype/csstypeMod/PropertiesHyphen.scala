@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.csstype.csstypeMod.SvgPropertiesHyphen because var conflicts: clip, `clip-path`, color, cursor, direction, display, filter, font, `font-family`, `font-size`, `font-size-adjust`, `font-stretch`, `font-style`, `font-variant`, `font-weight`, `image-rendering`, `letter-spacing`, `line-height`, mask, opacity, overflow, `paint-order`, `pointer-events`, `text-decoration`, `text-rendering`, `unicode-bidi`, visibility, `white-space`, `word-spacing`, `writing-mode`. Inlined `alignment-baseline`, `baseline-shift`, `clip-rule`, `color-interpolation`, `color-rendering`, `dominant-baseline`, fill, `fill-opacity`, `fill-rule`, `flood-color`, `flood-opacity`, `glyph-orientation-vertical`, `lighting-color`, marker, `marker-end`, `marker-mid`, `marker-start`, `shape-rendering`, `stop-color`, `stop-opacity`, stroke, `stroke-dasharray`, `stroke-dashoffset`, `stroke-linecap`, `stroke-linejoin`, `stroke-miterlimit`, `stroke-opacity`, `stroke-width`, `text-anchor`, `vector-effect` */ trait PropertiesHyphen[TLength]
-  extends StandardPropertiesHyphen[TLength]
-     with VendorPropertiesHyphen[TLength]
+  extends StandardLonghandPropertiesHyphen[TLength]
+     with StandardShorthandPropertiesHyphen[TLength]
+     with VendorLonghandPropertiesHyphen[TLength]
+     with VendorShorthandPropertiesHyphen[TLength]
      with ObsoletePropertiesHyphen[TLength] {
   var `alignment-baseline`: js.UndefOr[AlignmentBaselineProperty] = js.undefined
   var `baseline-shift`: js.UndefOr[BaselineShiftProperty[TLength]] = js.undefined
@@ -45,8 +47,10 @@ object PropertiesHyphen {
   @scala.inline
   def apply[TLength](
     ObsoletePropertiesHyphen: ObsoletePropertiesHyphen[TLength] = null,
-    StandardPropertiesHyphen: StandardPropertiesHyphen[TLength] = null,
-    VendorPropertiesHyphen: VendorPropertiesHyphen[TLength] = null,
+    StandardLonghandPropertiesHyphen: StandardLonghandPropertiesHyphen[TLength] = null,
+    StandardShorthandPropertiesHyphen: StandardShorthandPropertiesHyphen[TLength] = null,
+    VendorLonghandPropertiesHyphen: VendorLonghandPropertiesHyphen[TLength] = null,
+    VendorShorthandPropertiesHyphen: VendorShorthandPropertiesHyphen[TLength] = null,
     `alignment-baseline`: AlignmentBaselineProperty = null,
     `baseline-shift`: BaselineShiftProperty[TLength] = null,
     `clip-rule`: ClipRuleProperty = null,
@@ -79,18 +83,20 @@ object PropertiesHyphen {
     `vector-effect`: VectorEffectProperty = null
   ): PropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesHyphen)
-    js.Dynamic.global.Object.assign(__obj, StandardPropertiesHyphen)
-    js.Dynamic.global.Object.assign(__obj, VendorPropertiesHyphen)
-    if (`alignment-baseline` != null) __obj.updateDynamic("alignment-baseline")(`alignment-baseline`)
+    if (ObsoletePropertiesHyphen != null) js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesHyphen)
+    if (StandardLonghandPropertiesHyphen != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesHyphen)
+    if (StandardShorthandPropertiesHyphen != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesHyphen)
+    if (VendorLonghandPropertiesHyphen != null) js.Dynamic.global.Object.assign(__obj, VendorLonghandPropertiesHyphen)
+    if (VendorShorthandPropertiesHyphen != null) js.Dynamic.global.Object.assign(__obj, VendorShorthandPropertiesHyphen)
+    if (`alignment-baseline` != null) __obj.updateDynamic("alignment-baseline")(`alignment-baseline`.asInstanceOf[js.Any])
     if (`baseline-shift` != null) __obj.updateDynamic("baseline-shift")(`baseline-shift`.asInstanceOf[js.Any])
-    if (`clip-rule` != null) __obj.updateDynamic("clip-rule")(`clip-rule`)
-    if (`color-interpolation` != null) __obj.updateDynamic("color-interpolation")(`color-interpolation`)
-    if (`color-rendering` != null) __obj.updateDynamic("color-rendering")(`color-rendering`)
-    if (`dominant-baseline` != null) __obj.updateDynamic("dominant-baseline")(`dominant-baseline`)
+    if (`clip-rule` != null) __obj.updateDynamic("clip-rule")(`clip-rule`.asInstanceOf[js.Any])
+    if (`color-interpolation` != null) __obj.updateDynamic("color-interpolation")(`color-interpolation`.asInstanceOf[js.Any])
+    if (`color-rendering` != null) __obj.updateDynamic("color-rendering")(`color-rendering`.asInstanceOf[js.Any])
+    if (`dominant-baseline` != null) __obj.updateDynamic("dominant-baseline")(`dominant-baseline`.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (`fill-opacity` != null) __obj.updateDynamic("fill-opacity")(`fill-opacity`.asInstanceOf[js.Any])
-    if (`fill-rule` != null) __obj.updateDynamic("fill-rule")(`fill-rule`)
+    if (`fill-rule` != null) __obj.updateDynamic("fill-rule")(`fill-rule`.asInstanceOf[js.Any])
     if (`flood-color` != null) __obj.updateDynamic("flood-color")(`flood-color`.asInstanceOf[js.Any])
     if (`flood-opacity` != null) __obj.updateDynamic("flood-opacity")(`flood-opacity`.asInstanceOf[js.Any])
     if (`glyph-orientation-vertical` != null) __obj.updateDynamic("glyph-orientation-vertical")(`glyph-orientation-vertical`.asInstanceOf[js.Any])
@@ -99,19 +105,19 @@ object PropertiesHyphen {
     if (`marker-end` != null) __obj.updateDynamic("marker-end")(`marker-end`.asInstanceOf[js.Any])
     if (`marker-mid` != null) __obj.updateDynamic("marker-mid")(`marker-mid`.asInstanceOf[js.Any])
     if (`marker-start` != null) __obj.updateDynamic("marker-start")(`marker-start`.asInstanceOf[js.Any])
-    if (`shape-rendering` != null) __obj.updateDynamic("shape-rendering")(`shape-rendering`)
+    if (`shape-rendering` != null) __obj.updateDynamic("shape-rendering")(`shape-rendering`.asInstanceOf[js.Any])
     if (`stop-color` != null) __obj.updateDynamic("stop-color")(`stop-color`.asInstanceOf[js.Any])
     if (`stop-opacity` != null) __obj.updateDynamic("stop-opacity")(`stop-opacity`.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (`stroke-dasharray` != null) __obj.updateDynamic("stroke-dasharray")(`stroke-dasharray`.asInstanceOf[js.Any])
     if (`stroke-dashoffset` != null) __obj.updateDynamic("stroke-dashoffset")(`stroke-dashoffset`.asInstanceOf[js.Any])
-    if (`stroke-linecap` != null) __obj.updateDynamic("stroke-linecap")(`stroke-linecap`)
-    if (`stroke-linejoin` != null) __obj.updateDynamic("stroke-linejoin")(`stroke-linejoin`)
+    if (`stroke-linecap` != null) __obj.updateDynamic("stroke-linecap")(`stroke-linecap`.asInstanceOf[js.Any])
+    if (`stroke-linejoin` != null) __obj.updateDynamic("stroke-linejoin")(`stroke-linejoin`.asInstanceOf[js.Any])
     if (`stroke-miterlimit` != null) __obj.updateDynamic("stroke-miterlimit")(`stroke-miterlimit`.asInstanceOf[js.Any])
     if (`stroke-opacity` != null) __obj.updateDynamic("stroke-opacity")(`stroke-opacity`.asInstanceOf[js.Any])
     if (`stroke-width` != null) __obj.updateDynamic("stroke-width")(`stroke-width`.asInstanceOf[js.Any])
-    if (`text-anchor` != null) __obj.updateDynamic("text-anchor")(`text-anchor`)
-    if (`vector-effect` != null) __obj.updateDynamic("vector-effect")(`vector-effect`)
+    if (`text-anchor` != null) __obj.updateDynamic("text-anchor")(`text-anchor`.asInstanceOf[js.Any])
+    if (`vector-effect` != null) __obj.updateDynamic("vector-effect")(`vector-effect`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesHyphen[TLength]]
   }
 }

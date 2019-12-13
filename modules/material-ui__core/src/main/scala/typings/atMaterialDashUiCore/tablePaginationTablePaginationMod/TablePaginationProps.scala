@@ -16,8 +16,10 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.bottom
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.center
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.copy
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.date
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.decimal
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.descending
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.dialog
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.email
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.execute
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.footer
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grammar
@@ -35,7 +37,9 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.middle
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.on
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.other
@@ -44,19 +48,23 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.polite
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.popup
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.removals
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.right
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.search
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.spelling
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.step
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tel
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.text
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.top
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typings.atMaterialDashUiCore.tableCellTableCellMod.Padding
 import typings.atMaterialDashUiCore.tableCellTableCellMod.SortDirection
 import typings.atMaterialDashUiCore.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
 import typings.react.Anon_Html
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEventHandler
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEventHandler
 import typings.react.reactMod.ClipboardEventHandler
@@ -67,6 +75,7 @@ import typings.react.reactMod.FormEventHandler
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.PointerEventHandler
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.ReactNode
@@ -90,6 +99,7 @@ import scala.scalajs.js.annotation._
 trait TablePaginationProps extends js.Object {
   var ActionsComponent: js.UndefOr[ReactType[TablePaginationActionsProps]] = js.native
   var SelectProps: js.UndefOr[PartialSelectProps] = js.native
+  var abbr: js.UndefOr[String] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
   var align: js.UndefOr[inherit | left | center | right | justify] = js.native
@@ -151,7 +161,7 @@ trait TablePaginationProps extends js.Object {
   var colSpan: js.UndefOr[Double] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[TablePaginationBaseProps]] = js.native
-  var contentEditable: js.UndefOr[Boolean] = js.native
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
   var count: Double = js.native
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.native
@@ -159,13 +169,13 @@ trait TablePaginationProps extends js.Object {
   var defaultChecked: js.UndefOr[Boolean] = js.native
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
   var dir: js.UndefOr[String] = js.native
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Booleanish] = js.native
   var headers: js.UndefOr[String] = js.native
   var hidden: js.UndefOr[Boolean] = js.native
   var id: js.UndefOr[String] = js.native
   var inlist: js.UndefOr[js.Any] = js.native
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
-  var inputMode: js.UndefOr[String] = js.native
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
   var is: js.UndefOr[String] = js.native
   var itemID: js.UndefOr[String] = js.native
   var itemProp: js.UndefOr[String] = js.native
@@ -178,166 +188,85 @@ trait TablePaginationProps extends js.Object {
   var nextIconButtonProps: js.UndefOr[PartialIconButtonProps] = js.native
   var numeric: js.UndefOr[Boolean] = js.native
   var onAbort: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onAbortCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onAnimationEndCapture: js.UndefOr[AnimationEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onAnimationIterationCapture: js.UndefOr[AnimationEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onAnimationStartCapture: js.UndefOr[AnimationEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onAuxClick: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onAuxClickCapture: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onBeforeInput: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onBeforeInputCapture: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onBlur: js.UndefOr[FocusEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onBlurCapture: js.UndefOr[FocusEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onCanPlay: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onCanPlayCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onCanPlayThroughCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onChange: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onChangeCapture: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onChangeRowsPerPage: js.UndefOr[ChangeEventHandler[HTMLTextAreaElement | HTMLInputElement]] = js.native
   var onClick: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onClickCapture: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onCompositionEndCapture: js.UndefOr[CompositionEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onCompositionStartCapture: js.UndefOr[CompositionEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onCompositionUpdateCapture: js.UndefOr[CompositionEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onContextMenu: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onContextMenuCapture: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onCopy: js.UndefOr[ClipboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onCopyCapture: js.UndefOr[ClipboardEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onCut: js.UndefOr[ClipboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onCutCapture: js.UndefOr[ClipboardEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onDoubleClickCapture: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onDrag: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onDragCapture: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onDragEnd: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onDragEndCapture: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onDragEnter: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onDragEnterCapture: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onDragExit: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onDragExitCapture: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onDragLeave: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onDragLeaveCapture: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onDragOver: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onDragOverCapture: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onDragStart: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onDragStartCapture: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onDrop: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onDropCapture: js.UndefOr[DragEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onDurationChange: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onDurationChangeCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onEmptied: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onEmptiedCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onEncrypted: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onEncryptedCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onEnded: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onEndedCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onError: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onErrorCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onFocus: js.UndefOr[FocusEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onFocusCapture: js.UndefOr[FocusEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onGotPointerCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onGotPointerCaptureCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onInput: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onInputCapture: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onInvalid: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onInvalidCapture: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onKeyDownCapture: js.UndefOr[KeyboardEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onKeyPressCapture: js.UndefOr[KeyboardEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onKeyUpCapture: js.UndefOr[KeyboardEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onLoad: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onLoadCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onLoadStart: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onLoadStartCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onLoadedData: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onLoadedDataCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onLoadedMetadataCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onLostPointerCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onLostPointerCaptureCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onMouseDown: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onMouseDownCapture: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onMouseMove: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onMouseMoveCapture: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onMouseOut: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onMouseOutCapture: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onMouseOver: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onMouseOverCapture: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onMouseUp: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onMouseUpCapture: js.UndefOr[MouseEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPaste: js.UndefOr[ClipboardEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPasteCapture: js.UndefOr[ClipboardEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPause: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPauseCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPlay: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPlayCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPlaying: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPlayingCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPointerCancelCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPointerDown: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPointerDownCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPointerEnterCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPointerLeaveCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPointerMove: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPointerMoveCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPointerOut: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPointerOutCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPointerOver: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPointerOverCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onPointerUp: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onPointerUpCapture: js.UndefOr[PointerEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onProgress: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onProgressCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onRateChange: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onRateChangeCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onReset: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onResetCapture: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onScroll: js.UndefOr[UIEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onScrollCapture: js.UndefOr[UIEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onSeekedCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onSeeking: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onSeekingCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onSelect: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onSelectCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onStalled: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onStalledCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onSubmit: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onSubmitCapture: js.UndefOr[FormEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onSuspend: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onSuspendCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onTimeUpdateCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onTouchCancelCapture: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onTouchEndCapture: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onTouchMove: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onTouchMoveCapture: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onTouchStart: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onTouchStartCapture: js.UndefOr[TouchEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onTransitionEndCapture: js.UndefOr[TransitionEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onVolumeChangeCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onWaiting: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onWaitingCapture: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.native
   var onWheel: js.UndefOr[WheelEventHandler[HTMLTableHeaderCellElement]] = js.native
-  var onWheelCapture: js.UndefOr[WheelEventHandler[HTMLTableHeaderCellElement]] = js.native
   var padding: js.UndefOr[Padding] = js.native
   var page: Double = js.native
   var placeholder: js.UndefOr[String] = js.native
@@ -354,12 +283,13 @@ trait TablePaginationProps extends js.Object {
   var security: js.UndefOr[String] = js.native
   var slot: js.UndefOr[String] = js.native
   var sortDirection: js.UndefOr[SortDirection] = js.native
-  var spellCheck: js.UndefOr[Boolean] = js.native
+  var spellCheck: js.UndefOr[Booleanish] = js.native
   var style: js.UndefOr[CSSProperties] = js.native
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
   var tabIndex: js.UndefOr[Double] = js.native
   var title: js.UndefOr[String] = js.native
+  var translate: js.UndefOr[yes | no] = js.native
   var typeof: js.UndefOr[String] = js.native
   var unselectable: js.UndefOr[on | off] = js.native
   var valign: js.UndefOr[top | middle | bottom | baseline] = js.native

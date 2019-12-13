@@ -1,7 +1,7 @@
 inThisBuild(
   Seq(
     organization := "org.scalablytyped",
-    scalaVersion := "2.13.0",
+    scalaVersion := "2.13.1",
     version := "0.1.0-SNAPSHOT",
     publishArtifact in packageDoc := false,
     scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls"),

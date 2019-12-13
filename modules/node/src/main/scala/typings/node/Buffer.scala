@@ -1,10 +1,9 @@
 package typings.node
 
-import typings.node.NodeJS.TypedArray
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.cryptoMod._KeyLike
 import typings.node.fsMod._PathLike
 import typings.std.ArrayBuffer
-import typings.std.DataView
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -133,15 +132,6 @@ class Buffer protected ()
   def readUInt8(offset: Double): Double = js.native
   def readUIntBE(offset: Double, byteLength: Double): Double = js.native
   def readUIntLE(offset: Double, byteLength: Double): Double = js.native
-  /**
-    * Returns a new `Buffer` that references **the same memory as the original**, but offset and cropped by the start and end indices.
-    *
-    * This method is compatible with `Uint8Array#subarray()`.
-    *
-    * @param begin Where the new `Buffer` will start. Default: `0`.
-    * @param end Where the new `Buffer` will end (not inclusive). Default: `buf.length`.
-    */
-  def subarray(): Buffer = js.native
   def swap16(): Buffer = js.native
   def swap32(): Buffer = js.native
   def swap64(): Buffer = js.native
@@ -221,14 +211,12 @@ object Buffer extends js.Object {
     */
   def byteLength(string: java.lang.String): Double = js.native
   def byteLength(string: java.lang.String, encoding: BufferEncoding): Double = js.native
-  def byteLength(string: TypedArray): Double = js.native
-  def byteLength(string: TypedArray, encoding: BufferEncoding): Double = js.native
+  def byteLength(string: ArrayBufferView): Double = js.native
+  def byteLength(string: ArrayBufferView, encoding: BufferEncoding): Double = js.native
   def byteLength(string: SharedArrayBuffer): Double = js.native
   def byteLength(string: SharedArrayBuffer, encoding: BufferEncoding): Double = js.native
   def byteLength(string: ArrayBuffer): Double = js.native
   def byteLength(string: ArrayBuffer, encoding: BufferEncoding): Double = js.native
-  def byteLength(string: DataView): Double = js.native
-  def byteLength(string: DataView, encoding: BufferEncoding): Double = js.native
   /**
     * The same as buf1.compare(buf2).
     */

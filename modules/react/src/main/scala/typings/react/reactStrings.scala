@@ -1,5 +1,7 @@
 package typings.react
 
+import typings.react.experimentalMod.reactMod.SuspenseListRevealOrder
+import typings.react.experimentalMod.reactMod.SuspenseListTailMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +26,7 @@ object reactStrings {
   sealed trait WeakValidationMap extends js.Object
   
   @js.native
-  sealed trait a extends js.Object
+  sealed trait a_ extends js.Object
   
   @js.native
   sealed trait abbr extends js.Object
@@ -85,6 +87,11 @@ object reactStrings {
   
   @js.native
   sealed trait b extends js.Object
+  
+  @js.native
+  sealed trait backwards
+    extends SuspenseListRevealOrder
+       with typings.react.reactMod.SuspenseListRevealOrder
   
   @js.native
   sealed trait base extends js.Object
@@ -162,6 +169,11 @@ object reactStrings {
   sealed trait colgroup extends js.Object
   
   @js.native
+  sealed trait collapsed
+    extends SuspenseListTailMode
+       with typings.react.reactMod.SuspenseListTailMode
+  
+  @js.native
   sealed trait copy extends js.Object
   
   @js.native
@@ -175,6 +187,9 @@ object reactStrings {
   
   @js.native
   sealed trait dd extends js.Object
+  
+  @js.native
+  sealed trait decimal extends js.Object
   
   @js.native
   sealed trait defs extends js.Object
@@ -211,6 +226,9 @@ object reactStrings {
   
   @js.native
   sealed trait em extends js.Object
+  
+  @js.native
+  sealed trait email extends js.Object
   
   @js.native
   sealed trait embed extends js.Object
@@ -318,6 +336,11 @@ object reactStrings {
   sealed trait form extends js.Object
   
   @js.native
+  sealed trait forwards
+    extends SuspenseListRevealOrder
+       with typings.react.reactMod.SuspenseListRevealOrder
+  
+  @js.native
   sealed trait g extends js.Object
   
   @js.native
@@ -357,6 +380,11 @@ object reactStrings {
   sealed trait hgroup extends js.Object
   
   @js.native
+  sealed trait hidden
+    extends SuspenseListTailMode
+       with typings.react.reactMod.SuspenseListTailMode
+  
+  @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
@@ -366,7 +394,7 @@ object reactStrings {
   sealed trait html extends js.Object
   
   @js.native
-  sealed trait i extends js.Object
+  sealed trait i_ extends js.Object
   
   @js.native
   sealed trait ideographic extends js.Object
@@ -516,6 +544,9 @@ object reactStrings {
   sealed trait noscript extends js.Object
   
   @js.native
+  sealed trait numeric extends js.Object
+  
+  @js.native
   sealed trait `object` extends js.Object
   
   @js.native
@@ -627,6 +658,9 @@ object reactStrings {
   sealed trait script extends js.Object
   
   @js.native
+  sealed trait search extends js.Object
+  
+  @js.native
   sealed trait section extends js.Object
   
   @js.native
@@ -696,6 +730,9 @@ object reactStrings {
   sealed trait td extends js.Object
   
   @js.native
+  sealed trait tel extends js.Object
+  
+  @js.native
   sealed trait template extends js.Object
   
   @js.native
@@ -732,6 +769,11 @@ object reactStrings {
   sealed trait title extends js.Object
   
   @js.native
+  sealed trait together
+    extends SuspenseListRevealOrder
+       with typings.react.reactMod.SuspenseListRevealOrder
+  
+  @js.native
   sealed trait top extends js.Object
   
   @js.native
@@ -757,6 +799,9 @@ object reactStrings {
   
   @js.native
   sealed trait update extends js.Object
+  
+  @js.native
+  sealed trait url extends js.Object
   
   @js.native
   sealed trait use extends js.Object
@@ -798,7 +843,7 @@ object reactStrings {
   @scala.inline
   def WeakValidationMap: WeakValidationMap = "WeakValidationMap".asInstanceOf[WeakValidationMap]
   @scala.inline
-  def a: a = "a".asInstanceOf[a]
+  def a_ : a_ = "a".asInstanceOf[a_]
   @scala.inline
   def abbr: abbr = "abbr".asInstanceOf[abbr]
   @scala.inline
@@ -839,6 +884,8 @@ object reactStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def b: b = "b".asInstanceOf[b]
+  @scala.inline
+  def backwards: backwards = "backwards".asInstanceOf[backwards]
   @scala.inline
   def base: base = "base".asInstanceOf[base]
   @scala.inline
@@ -890,6 +937,8 @@ object reactStrings {
   @scala.inline
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   @scala.inline
+  def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
+  @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
@@ -899,6 +948,8 @@ object reactStrings {
   def date: date = "date".asInstanceOf[date]
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
   def defs: defs = "defs".asInstanceOf[defs]
   @scala.inline
@@ -923,6 +974,8 @@ object reactStrings {
   def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   @scala.inline
   def em: em = "em".asInstanceOf[em]
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
   @scala.inline
   def embed: embed = "embed".asInstanceOf[embed]
   @scala.inline
@@ -994,6 +1047,8 @@ object reactStrings {
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   @scala.inline
+  def forwards: forwards = "forwards".asInstanceOf[forwards]
+  @scala.inline
   def g: g = "g".asInstanceOf[g]
   @scala.inline
   def grammar: grammar = "grammar".asInstanceOf[grammar]
@@ -1020,13 +1075,15 @@ object reactStrings {
   @scala.inline
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline
-  def i: i = "i".asInstanceOf[i]
+  def i_ : i_ = "i".asInstanceOf[i_]
   @scala.inline
   def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   @scala.inline
@@ -1126,6 +1183,8 @@ object reactStrings {
   @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
   @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
   def off: off = "off".asInstanceOf[off]
@@ -1200,6 +1259,8 @@ object reactStrings {
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  @scala.inline
   def section: section = "section".asInstanceOf[section]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
@@ -1246,6 +1307,8 @@ object reactStrings {
   @scala.inline
   def td: td = "td".asInstanceOf[td]
   @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
   def template: template = "template".asInstanceOf[template]
   @scala.inline
   def terminal: terminal = "terminal".asInstanceOf[terminal]
@@ -1270,6 +1333,8 @@ object reactStrings {
   @scala.inline
   def title: title = "title".asInstanceOf[title]
   @scala.inline
+  def together: together = "together".asInstanceOf[together]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
@@ -1287,6 +1352,8 @@ object reactStrings {
   def ul: ul = "ul".asInstanceOf[ul]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
   @scala.inline
   def use: use = "use".asInstanceOf[use]
   @scala.inline

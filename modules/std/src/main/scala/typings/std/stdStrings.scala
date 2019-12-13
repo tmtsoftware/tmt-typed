@@ -3,6 +3,7 @@ package typings.std
 import typings.std.Intl.DateTimeFormatPartTypes
 import typings.std.Intl.NumberFormatPartTypes
 import typings.std.WebAssembly.ImportExportKind
+import typings.std.WebAssembly.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -1216,6 +1217,12 @@ object stdStrings {
   sealed trait exponential extends DistanceModelType
   
   @js.native
+  sealed trait f32 extends ValueType
+  
+  @js.native
+  sealed trait f64 extends ValueType
+  
+  @js.native
   sealed trait fail extends PaymentComplete
   
   @js.native
@@ -1505,6 +1512,12 @@ object stdStrings {
   
   @js.native
   sealed trait i extends js.Object
+  
+  @js.native
+  sealed trait i32 extends ValueType
+  
+  @js.native
+  sealed trait i64 extends ValueType
   
   @js.native
   sealed trait icecandidate extends js.Object
@@ -1967,7 +1980,7 @@ object stdStrings {
   sealed trait nextunique extends IDBCursorDirection
   
   @js.native
-  sealed trait nfc
+  sealed trait nfc_
     extends AuthenticatorTransport
        with Transport
   
@@ -2260,9 +2273,7 @@ object stdStrings {
   sealed trait premultiply extends js.Object
   
   @js.native
-  sealed trait prerender
-    extends NavigationType
-       with VisibilityState
+  sealed trait prerender extends NavigationType
   
   @js.native
   sealed trait preserve extends SelectionMode
@@ -2315,7 +2326,7 @@ object stdStrings {
   sealed trait raw extends KeyFormat
   
   @js.native
-  sealed trait readonly extends IDBTransactionMode
+  sealed trait readonly_ extends IDBTransactionMode
   
   @js.native
   sealed trait readwrite extends IDBTransactionMode
@@ -2377,7 +2388,7 @@ object stdStrings {
   sealed trait require extends RTCRtcpMuxPolicy
   
   @js.native
-  sealed trait required
+  sealed trait required_
     extends CredentialMediationRequirement
        with MediaKeysRequirement
        with UserVerificationRequirement
@@ -2886,7 +2897,7 @@ object stdStrings {
   sealed trait usable extends MediaKeyStatus
   
   @js.native
-  sealed trait usb
+  sealed trait usb_
     extends AuthenticatorTransport
        with Transport
   
@@ -3751,6 +3762,10 @@ object stdStrings {
   @scala.inline
   def exponential: exponential = "exponential".asInstanceOf[exponential]
   @scala.inline
+  def f32: f32 = "f32".asInstanceOf[f32]
+  @scala.inline
+  def f64: f64 = "f64".asInstanceOf[f64]
+  @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
@@ -3932,6 +3947,10 @@ object stdStrings {
   def `http://wwwDOTw3DOTorg/2000/svg`: `http://wwwDOTw3DOTorg/2000/svg` = "http://www.w3.org/2000/svg".asInstanceOf[`http://wwwDOTw3DOTorg/2000/svg`]
   @scala.inline
   def i: i = "i".asInstanceOf[i]
+  @scala.inline
+  def i32: i32 = "i32".asInstanceOf[i32]
+  @scala.inline
+  def i64: i64 = "i64".asInstanceOf[i64]
   @scala.inline
   def icecandidate: icecandidate = "icecandidate".asInstanceOf[icecandidate]
   @scala.inline
@@ -4217,7 +4236,7 @@ object stdStrings {
   @scala.inline
   def nextunique: nextunique = "nextunique".asInstanceOf[nextunique]
   @scala.inline
-  def nfc: nfc = "nfc".asInstanceOf[nfc]
+  def nfc_ : nfc_ = "nfc".asInstanceOf[nfc_]
   @scala.inline
   def `no-cache`: `no-cache` = "no-cache".asInstanceOf[`no-cache`]
   @scala.inline
@@ -4435,7 +4454,7 @@ object stdStrings {
   @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
   @scala.inline
-  def readonly: readonly = "readonly".asInstanceOf[readonly]
+  def readonly_ : readonly_ = "readonly".asInstanceOf[readonly_]
   @scala.inline
   def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
   @scala.inline
@@ -4471,7 +4490,7 @@ object stdStrings {
   @scala.inline
   def require: require = "require".asInstanceOf[require]
   @scala.inline
-  def required: required = "required".asInstanceOf[required]
+  def required_ : required_ = "required".asInstanceOf[required_]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
@@ -4789,7 +4808,7 @@ object stdStrings {
   @scala.inline
   def usable: usable = "usable".asInstanceOf[usable]
   @scala.inline
-  def usb: usb = "usb".asInstanceOf[usb]
+  def usb_ : usb_ = "usb".asInstanceOf[usb_]
   @scala.inline
   def use: use = "use".asInstanceOf[use]
   @scala.inline

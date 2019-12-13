@@ -147,7 +147,6 @@ import typings.std.stdStrings.slot
 import typings.std.stdStrings.small
 import typings.std.stdStrings.source
 import typings.std.stdStrings.span
-import typings.std.stdStrings.stop
 import typings.std.stdStrings.strong
 import typings.std.stdStrings.style
 import typings.std.stdStrings.sub
@@ -185,11 +184,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Element
   extends ChildNode
-     with ParentNode
-     with NonDocumentTypeChildNode
-     with Slotable
+     with Animatable
      with InnerHTML
-     with Animatable {
+     with NonDocumentTypeChildNode
+     with ParentNode
+     with Slotable {
   val attributes: NamedNodeMap = js.native
   /**
     * Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object.
@@ -553,7 +552,7 @@ trait Element
   @JSName("closest")
   def closest_span(selector: span): HTMLSpanElement | Null = js.native
   @JSName("closest")
-  def closest_stop(selector: stop): SVGStopElement | Null = js.native
+  def closest_stop(selector: typings.std.stdStrings.stop): SVGStopElement | Null = js.native
   @JSName("closest")
   def closest_strong(selector: strong): HTMLElement | Null = js.native
   @JSName("closest")
@@ -629,8 +628,8 @@ trait Element
   def getAttributeNames(): js.Array[java.lang.String] = js.native
   def getAttributeNode(name: java.lang.String): Attr | Null = js.native
   def getAttributeNodeNS(namespaceURI: java.lang.String, localName: java.lang.String): Attr | Null = js.native
-  def getBoundingClientRect(): ClientRect | DOMRect = js.native
-  def getClientRects(): ClientRectList | DOMRectList = js.native
+  def getBoundingClientRect(): DOMRect = js.native
+  def getClientRects(): DOMRectList = js.native
   /**
     * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
     */
@@ -924,7 +923,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_span(qualifiedName: span): HTMLCollectionOf[HTMLSpanElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_stop(qualifiedName: stop): HTMLCollectionOf[SVGStopElement] = js.native
+  def getElementsByTagName_stop(qualifiedName: typings.std.stdStrings.stop): HTMLCollectionOf[SVGStopElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_strong(qualifiedName: strong): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")

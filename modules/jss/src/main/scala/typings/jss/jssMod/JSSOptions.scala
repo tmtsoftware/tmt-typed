@@ -1,28 +1,18 @@
 package typings.jss.jssMod
 
-import typings.std.HTMLElement
+import typings.jss.Anon_Renderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSSOptions extends js.Object {
-  var insertionPoint: String | HTMLElement
-  var plugins: js.Array[JSSPlugin]
-  var virtual: Boolean
-  def createGenerateClassName(): GenerateClassName[_]
-}
-
-object JSSOptions {
-  @scala.inline
-  def apply(
-    createGenerateClassName: () => GenerateClassName[_],
-    insertionPoint: String | HTMLElement,
-    plugins: js.Array[JSSPlugin],
-    virtual: Boolean
-  ): JSSOptions = {
-    val __obj = js.Dynamic.literal(createGenerateClassName = js.Any.fromFunction0(createGenerateClassName), insertionPoint = insertionPoint.asInstanceOf[js.Any], plugins = plugins, virtual = virtual)
-  
-    __obj.asInstanceOf[JSSOptions]
-  }
+@js.native
+trait JssOptions extends js.Object {
+  var Renderer: js.UndefOr[Anon_Renderer | Null] = js.native
+  @JSName("createGenerateId")
+  var createGenerateId_Original: CreateGenerateId = js.native
+  var insertionPoint: InsertionPoint = js.native
+  var plugins: js.Array[Plugin] = js.native
+  def createGenerateId(): GenerateId = js.native
+  def createGenerateId(options: CreateGenerateIdOptions): GenerateId = js.native
 }
 

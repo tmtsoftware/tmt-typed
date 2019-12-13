@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SessionOptions extends js.Object {
-  var createConnection: js.UndefOr[js.Function2[/* authority */ URL, /* option */ SessionOptions, Duplex]] = js.undefined
+  var createConnection: js.UndefOr[js.Function2[/* authority */ URL, /* option */ this.type, Duplex]] = js.undefined
   var maxDeflateDynamicTableSize: js.UndefOr[Double] = js.undefined
   var maxHeaderListPairs: js.UndefOr[Double] = js.undefined
   var maxOutstandingPings: js.UndefOr[Double] = js.undefined
@@ -22,7 +22,7 @@ trait SessionOptions extends js.Object {
 object SessionOptions {
   @scala.inline
   def apply(
-    createConnection: (/* authority */ URL, /* option */ SessionOptions) => Duplex = null,
+    createConnection: (/* authority */ URL, SessionOptions) => Duplex = null,
     maxDeflateDynamicTableSize: Int | Double = null,
     maxHeaderListPairs: Int | Double = null,
     maxOutstandingPings: Int | Double = null,
@@ -43,7 +43,7 @@ object SessionOptions {
     if (paddingStrategy != null) __obj.updateDynamic("paddingStrategy")(paddingStrategy.asInstanceOf[js.Any])
     if (peerMaxConcurrentStreams != null) __obj.updateDynamic("peerMaxConcurrentStreams")(peerMaxConcurrentStreams.asInstanceOf[js.Any])
     if (selectPadding != null) __obj.updateDynamic("selectPadding")(js.Any.fromFunction2(selectPadding))
-    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }
 }

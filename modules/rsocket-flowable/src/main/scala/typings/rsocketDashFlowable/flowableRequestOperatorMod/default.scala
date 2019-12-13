@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default[T] protected () extends FlowableRequestOperator[T] {
   def this(
-    subscriber: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISubscriber<T> */ js.Any,
+    subscriber: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ js.Any,
     toRequest: Double
   ) = this()
   /* CompleteClass */
@@ -20,7 +20,7 @@ class default[T] protected () extends FlowableRequestOperator[T] {
   override def onNext(t: T): Unit = js.native
   /* CompleteClass */
   override def onSubscribe(
-    subscription: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISubscription */ js.Any
+    subscription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscription */ js.Any
   ): Unit = js.native
 }
 

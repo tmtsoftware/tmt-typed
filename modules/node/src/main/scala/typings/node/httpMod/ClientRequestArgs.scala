@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ClientRequestArgs extends js.Object {
   var _defaultAgent: js.UndefOr[Agent] = js.undefined
   var agent: js.UndefOr[Agent | Boolean] = js.undefined
-  var auth: js.UndefOr[java.lang.String] = js.undefined
+  var auth: js.UndefOr[java.lang.String | Null] = js.undefined
   // https://github.com/nodejs/node/blob/master/lib/_http_client.js#L278
   var createConnection: js.UndefOr[
     js.Function2[
@@ -21,13 +21,13 @@ trait ClientRequestArgs extends js.Object {
   var defaultPort: js.UndefOr[Double | java.lang.String] = js.undefined
   var family: js.UndefOr[Double] = js.undefined
   var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
-  var host: js.UndefOr[java.lang.String] = js.undefined
-  var hostname: js.UndefOr[java.lang.String] = js.undefined
+  var host: js.UndefOr[java.lang.String | Null] = js.undefined
+  var hostname: js.UndefOr[java.lang.String | Null] = js.undefined
   var localAddress: js.UndefOr[java.lang.String] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined
-  var path: js.UndefOr[java.lang.String] = js.undefined
-  var port: js.UndefOr[Double | java.lang.String] = js.undefined
-  var protocol: js.UndefOr[java.lang.String] = js.undefined
+  var path: js.UndefOr[java.lang.String | Null] = js.undefined
+  var port: js.UndefOr[Double | java.lang.String | Null] = js.undefined
+  var protocol: js.UndefOr[java.lang.String | Null] = js.undefined
   var setHost: js.UndefOr[Boolean] = js.undefined
   var socketPath: js.UndefOr[java.lang.String] = js.undefined
   var timeout: js.UndefOr[Double] = js.undefined
@@ -55,22 +55,22 @@ object ClientRequestArgs {
     timeout: Int | Double = null
   ): ClientRequestArgs = {
     val __obj = js.Dynamic.literal()
-    if (_defaultAgent != null) __obj.updateDynamic("_defaultAgent")(_defaultAgent)
+    if (_defaultAgent != null) __obj.updateDynamic("_defaultAgent")(_defaultAgent.asInstanceOf[js.Any])
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2(createConnection))
     if (defaultPort != null) __obj.updateDynamic("defaultPort")(defaultPort.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (!js.isUndefined(setHost)) __obj.updateDynamic("setHost")(setHost)
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(setHost)) __obj.updateDynamic("setHost")(setHost.asInstanceOf[js.Any])
+    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientRequestArgs]
   }

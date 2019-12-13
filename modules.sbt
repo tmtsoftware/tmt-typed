@@ -2,7 +2,7 @@
 lazy val `tmt-typed` = project
   .in(file("."))
   .aggregate(
-    std, `svg_dot_js`,`rsocket-types`,`csw-aas-js`,`paper`,`prop-types`,`rsocket-websocket-client`,`rsocket-core`,`react-facade`,`keycloak-js`,`csstype`,`react-transition-group`,`node`,`react`,`eventsource`,`material-ui__core`,`react-dom`,`rsocket-flowable`,`popper_dot_js`,`p5`,`jss`,`indefinite-observable`,`material-ui__icons`
+    std, `svg_dot_js`,`rsocket-types`,`csw-aas-js`,`paper`,`prop-types`,`rsocket-websocket-client`,`rsocket-core`,`react-facade`,`keycloak-js`,`cheerio`,`csstype`,`react-transition-group`,`node`,`react`,`eventsource`,`material-ui__core`,`react-dom`,`rsocket-flowable`,`popper_dot_js`,`p5`,`jss`,`enzyme`,`material-ui__icons`
   )
 
 lazy val std = project
@@ -19,11 +19,6 @@ lazy val `react-dom` = project
   .in(file("modules/react-dom"))
   .enablePlugins(ScalaJSPlugin)
   .dependsOn(`prop-types`,`react`,`csstype`,`std`)
-
-lazy val `indefinite-observable` = project
-  .in(file("modules/indefinite-observable"))
-  .enablePlugins(ScalaJSPlugin)
-  .dependsOn()
 
 lazy val `keycloak-js` = project
   .in(file("modules/keycloak-js"))
@@ -68,7 +63,7 @@ lazy val `rsocket-types` = project
 lazy val `material-ui__icons` = project
   .in(file("modules/material-ui__icons"))
   .enablePlugins(ScalaJSPlugin)
-  .dependsOn(`jss`,`prop-types`,`react`,`react-transition-group`,`material-ui__core`,`csstype`,`indefinite-observable`,`popper_dot_js`,`std`)
+  .dependsOn(`cheerio`,`enzyme`,`node`,`prop-types`,`react`,`react-transition-group`,`material-ui__core`,`csstype`,`jss`,`popper_dot_js`,`std`)
 
 lazy val `csw-aas-js` = project
   .in(file("modules/csw-aas-js"))
@@ -78,7 +73,7 @@ lazy val `csw-aas-js` = project
 lazy val `jss` = project
   .in(file("modules/jss"))
   .enablePlugins(ScalaJSPlugin)
-  .dependsOn(`csstype`,`indefinite-observable`,`std`)
+  .dependsOn(`csstype`,`std`)
 
 lazy val `eventsource` = project
   .in(file("modules/eventsource"))
@@ -103,12 +98,22 @@ lazy val `popper_dot_js` = project
 lazy val `material-ui__core` = project
   .in(file("modules/material-ui__core"))
   .enablePlugins(ScalaJSPlugin)
-  .dependsOn(`jss`,`prop-types`,`react`,`react-transition-group`,`csstype`,`indefinite-observable`,`popper_dot_js`,`std`)
+  .dependsOn(`cheerio`,`enzyme`,`node`,`prop-types`,`react`,`react-transition-group`,`csstype`,`jss`,`popper_dot_js`,`std`)
+
+lazy val `cheerio` = project
+  .in(file("modules/cheerio"))
+  .enablePlugins(ScalaJSPlugin)
+  .dependsOn(`node`,`std`)
 
 lazy val `paper` = project
   .in(file("modules/paper"))
   .enablePlugins(ScalaJSPlugin)
   .dependsOn(`std`)
+
+lazy val `enzyme` = project
+  .in(file("modules/enzyme"))
+  .enablePlugins(ScalaJSPlugin)
+  .dependsOn(`cheerio`,`node`,`prop-types`,`react`,`csstype`,`std`)
 
 lazy val `node` = project
   .in(file("modules/node"))

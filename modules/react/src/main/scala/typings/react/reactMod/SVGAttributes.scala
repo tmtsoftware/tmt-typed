@@ -1,10 +1,13 @@
 package typings.react.reactMod
 
+import typings.react.reactStrings.Empty
 import typings.react.reactStrings.`after-edge`
 import typings.react.reactStrings.`before-edge`
 import typings.react.reactStrings.`text-after-edge`
 import typings.react.reactStrings.`text-before-edge`
+import typings.react.reactStrings.`use-credentials`
 import typings.react.reactStrings.alphabetic
+import typings.react.reactStrings.anonymous
 import typings.react.reactStrings.auto
 import typings.react.reactStrings.baseline
 import typings.react.reactStrings.bevel
@@ -60,7 +63,7 @@ trait SVGAttributes[T]
   var ascent: js.UndefOr[Double | String] = js.undefined
   var attributeName: js.UndefOr[String] = js.undefined
   var attributeType: js.UndefOr[String] = js.undefined
-  var autoReverse: js.UndefOr[Double | String] = js.undefined
+  var autoReverse: js.UndefOr[Booleanish] = js.undefined
   var azimuth: js.UndefOr[Double | String] = js.undefined
   var baseFrequency: js.UndefOr[Double | String] = js.undefined
   var baseProfile: js.UndefOr[Double | String] = js.undefined
@@ -85,6 +88,7 @@ trait SVGAttributes[T]
   var colorRendering: js.UndefOr[Double | String] = js.undefined
   var contentScriptType: js.UndefOr[Double | String] = js.undefined
   var contentStyleType: js.UndefOr[Double | String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | Empty] = js.undefined
   var cursor: js.UndefOr[Double | String] = js.undefined
   var cx: js.UndefOr[Double | String] = js.undefined
   var cy: js.UndefOr[Double | String] = js.undefined
@@ -104,7 +108,7 @@ trait SVGAttributes[T]
   var enableBackground: js.UndefOr[Double | String] = js.undefined
   var end: js.UndefOr[Double | String] = js.undefined
   var exponent: js.UndefOr[Double | String] = js.undefined
-  var externalResourcesRequired: js.UndefOr[Double | String] = js.undefined
+  var externalResourcesRequired: js.UndefOr[Booleanish] = js.undefined
   var fill: js.UndefOr[String] = js.undefined
   var fillOpacity: js.UndefOr[Double | String] = js.undefined
   var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.undefined
@@ -113,7 +117,7 @@ trait SVGAttributes[T]
   var filterUnits: js.UndefOr[Double | String] = js.undefined
   var floodColor: js.UndefOr[Double | String] = js.undefined
   var floodOpacity: js.UndefOr[Double | String] = js.undefined
-  var focusable: js.UndefOr[Double | String] = js.undefined
+  var focusable: js.UndefOr[Booleanish | auto] = js.undefined
   var fontFamily: js.UndefOr[String] = js.undefined
   var fontSize: js.UndefOr[Double | String] = js.undefined
   var fontSizeAdjust: js.UndefOr[Double | String] = js.undefined
@@ -199,7 +203,7 @@ trait SVGAttributes[T]
   var pointsAtX: js.UndefOr[Double | String] = js.undefined
   var pointsAtY: js.UndefOr[Double | String] = js.undefined
   var pointsAtZ: js.UndefOr[Double | String] = js.undefined
-  var preserveAlpha: js.UndefOr[Double | String] = js.undefined
+  var preserveAlpha: js.UndefOr[Booleanish] = js.undefined
   var preserveAspectRatio: js.UndefOr[String] = js.undefined
   var primitiveUnits: js.UndefOr[Double | String] = js.undefined
   var r: js.UndefOr[Double | String] = js.undefined
@@ -326,7 +330,7 @@ object SVGAttributes {
     ascent: Double | String = null,
     attributeName: String = null,
     attributeType: String = null,
-    autoReverse: Double | String = null,
+    autoReverse: js.UndefOr[Boolean] = js.undefined,
     azimuth: Double | String = null,
     baseFrequency: Double | String = null,
     baseProfile: Double | String = null,
@@ -349,6 +353,7 @@ object SVGAttributes {
     colorRendering: Double | String = null,
     contentScriptType: Double | String = null,
     contentStyleType: Double | String = null,
+    crossOrigin: anonymous | `use-credentials` | Empty = null,
     cursor: Double | String = null,
     cx: Double | String = null,
     cy: Double | String = null,
@@ -368,7 +373,7 @@ object SVGAttributes {
     enableBackground: Double | String = null,
     end: Double | String = null,
     exponent: Double | String = null,
-    externalResourcesRequired: Double | String = null,
+    externalResourcesRequired: js.UndefOr[Boolean] = js.undefined,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: nonzero | evenodd | inherit = null,
@@ -377,7 +382,7 @@ object SVGAttributes {
     filterUnits: Double | String = null,
     floodColor: Double | String = null,
     floodOpacity: Double | String = null,
-    focusable: Double | String = null,
+    focusable: Booleanish | auto = null,
     fontFamily: String = null,
     fontSize: Double | String = null,
     fontSizeAdjust: Double | String = null,
@@ -463,7 +468,7 @@ object SVGAttributes {
     pointsAtX: Double | String = null,
     pointsAtY: Double | String = null,
     pointsAtZ: Double | String = null,
-    preserveAlpha: Double | String = null,
+    preserveAlpha: js.UndefOr[Boolean] = js.undefined,
     preserveAspectRatio: String = null,
     primitiveUnits: Double | String = null,
     r: Double | String = null,
@@ -565,12 +570,11 @@ object SVGAttributes {
     xmlSpace: String = null,
     xmlns: String = null,
     xmlnsXlink: String = null,
-    y: Double | String = null,
-    y1: Double | String = null
+    y: Double | String = null
   ): SVGAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AriaAttributes)
-    js.Dynamic.global.Object.assign(__obj, DOMAttributes)
+    if (AriaAttributes != null) js.Dynamic.global.Object.assign(__obj, AriaAttributes)
+    if (DOMAttributes != null) js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     if (accentHeight != null) __obj.updateDynamic("accentHeight")(accentHeight.asInstanceOf[js.Any])
     if (accumulate != null) __obj.updateDynamic("accumulate")(accumulate.asInstanceOf[js.Any])
     if (additive != null) __obj.updateDynamic("additive")(additive.asInstanceOf[js.Any])
@@ -580,9 +584,9 @@ object SVGAttributes {
     if (amplitude != null) __obj.updateDynamic("amplitude")(amplitude.asInstanceOf[js.Any])
     if (arabicForm != null) __obj.updateDynamic("arabicForm")(arabicForm.asInstanceOf[js.Any])
     if (ascent != null) __obj.updateDynamic("ascent")(ascent.asInstanceOf[js.Any])
-    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName)
-    if (attributeType != null) __obj.updateDynamic("attributeType")(attributeType)
-    if (autoReverse != null) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
+    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
+    if (attributeType != null) __obj.updateDynamic("attributeType")(attributeType.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReverse)) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
     if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
     if (baseFrequency != null) __obj.updateDynamic("baseFrequency")(baseFrequency.asInstanceOf[js.Any])
     if (baseProfile != null) __obj.updateDynamic("baseProfile")(baseProfile.asInstanceOf[js.Any])
@@ -593,22 +597,23 @@ object SVGAttributes {
     if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
     if (calcMode != null) __obj.updateDynamic("calcMode")(calcMode.asInstanceOf[js.Any])
     if (capHeight != null) __obj.updateDynamic("capHeight")(capHeight.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
+    if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath.asInstanceOf[js.Any])
     if (clipPathUnits != null) __obj.updateDynamic("clipPathUnits")(clipPathUnits.asInstanceOf[js.Any])
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorInterpolation != null) __obj.updateDynamic("colorInterpolation")(colorInterpolation.asInstanceOf[js.Any])
     if (colorInterpolationFilters != null) __obj.updateDynamic("colorInterpolationFilters")(colorInterpolationFilters.asInstanceOf[js.Any])
     if (colorProfile != null) __obj.updateDynamic("colorProfile")(colorProfile.asInstanceOf[js.Any])
     if (colorRendering != null) __obj.updateDynamic("colorRendering")(colorRendering.asInstanceOf[js.Any])
     if (contentScriptType != null) __obj.updateDynamic("contentScriptType")(contentScriptType.asInstanceOf[js.Any])
     if (contentStyleType != null) __obj.updateDynamic("contentStyleType")(contentStyleType.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
     if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d)
+    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
     if (decelerate != null) __obj.updateDynamic("decelerate")(decelerate.asInstanceOf[js.Any])
     if (descent != null) __obj.updateDynamic("descent")(descent.asInstanceOf[js.Any])
     if (diffuseConstant != null) __obj.updateDynamic("diffuseConstant")(diffuseConstant.asInstanceOf[js.Any])
@@ -624,17 +629,17 @@ object SVGAttributes {
     if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (externalResourcesRequired != null) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (!js.isUndefined(externalResourcesRequired)) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterRes != null) __obj.updateDynamic("filterRes")(filterRes.asInstanceOf[js.Any])
     if (filterUnits != null) __obj.updateDynamic("filterUnits")(filterUnits.asInstanceOf[js.Any])
     if (floodColor != null) __obj.updateDynamic("floodColor")(floodColor.asInstanceOf[js.Any])
     if (floodOpacity != null) __obj.updateDynamic("floodOpacity")(floodOpacity.asInstanceOf[js.Any])
     if (focusable != null) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontSizeAdjust != null) __obj.updateDynamic("fontSizeAdjust")(fontSizeAdjust.asInstanceOf[js.Any])
     if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch.asInstanceOf[js.Any])
@@ -651,17 +656,17 @@ object SVGAttributes {
     if (glyphOrientationHorizontal != null) __obj.updateDynamic("glyphOrientationHorizontal")(glyphOrientationHorizontal.asInstanceOf[js.Any])
     if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
     if (glyphRef != null) __obj.updateDynamic("glyphRef")(glyphRef.asInstanceOf[js.Any])
-    if (gradientTransform != null) __obj.updateDynamic("gradientTransform")(gradientTransform)
-    if (gradientUnits != null) __obj.updateDynamic("gradientUnits")(gradientUnits)
+    if (gradientTransform != null) __obj.updateDynamic("gradientTransform")(gradientTransform.asInstanceOf[js.Any])
+    if (gradientUnits != null) __obj.updateDynamic("gradientUnits")(gradientUnits.asInstanceOf[js.Any])
     if (hanging != null) __obj.updateDynamic("hanging")(hanging.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (horizAdvX != null) __obj.updateDynamic("horizAdvX")(horizAdvX.asInstanceOf[js.Any])
     if (horizOriginX != null) __obj.updateDynamic("horizOriginX")(horizOriginX.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ideographic != null) __obj.updateDynamic("ideographic")(ideographic.asInstanceOf[js.Any])
     if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
-    if (in != null) __obj.updateDynamic("in")(in)
+    if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
     if (in2 != null) __obj.updateDynamic("in2")(in2.asInstanceOf[js.Any])
     if (intercept != null) __obj.updateDynamic("intercept")(intercept.asInstanceOf[js.Any])
     if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
@@ -675,28 +680,28 @@ object SVGAttributes {
     if (keyPoints != null) __obj.updateDynamic("keyPoints")(keyPoints.asInstanceOf[js.Any])
     if (keySplines != null) __obj.updateDynamic("keySplines")(keySplines.asInstanceOf[js.Any])
     if (keyTimes != null) __obj.updateDynamic("keyTimes")(keyTimes.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (lengthAdjust != null) __obj.updateDynamic("lengthAdjust")(lengthAdjust.asInstanceOf[js.Any])
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
     if (lightingColor != null) __obj.updateDynamic("lightingColor")(lightingColor.asInstanceOf[js.Any])
     if (limitingConeAngle != null) __obj.updateDynamic("limitingConeAngle")(limitingConeAngle.asInstanceOf[js.Any])
     if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd)
+    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
     if (markerHeight != null) __obj.updateDynamic("markerHeight")(markerHeight.asInstanceOf[js.Any])
-    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid)
-    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart)
+    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
+    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
     if (markerUnits != null) __obj.updateDynamic("markerUnits")(markerUnits.asInstanceOf[js.Any])
     if (markerWidth != null) __obj.updateDynamic("markerWidth")(markerWidth.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask)
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (maskContentUnits != null) __obj.updateDynamic("maskContentUnits")(maskContentUnits.asInstanceOf[js.Any])
     if (maskUnits != null) __obj.updateDynamic("maskUnits")(maskUnits.asInstanceOf[js.Any])
     if (mathematical != null) __obj.updateDynamic("mathematical")(mathematical.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (numOctaves != null) __obj.updateDynamic("numOctaves")(numOctaves.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
@@ -711,16 +716,16 @@ object SVGAttributes {
     if (paintOrder != null) __obj.updateDynamic("paintOrder")(paintOrder.asInstanceOf[js.Any])
     if (panose1 != null) __obj.updateDynamic("panose1")(panose1.asInstanceOf[js.Any])
     if (pathLength != null) __obj.updateDynamic("pathLength")(pathLength.asInstanceOf[js.Any])
-    if (patternContentUnits != null) __obj.updateDynamic("patternContentUnits")(patternContentUnits)
+    if (patternContentUnits != null) __obj.updateDynamic("patternContentUnits")(patternContentUnits.asInstanceOf[js.Any])
     if (patternTransform != null) __obj.updateDynamic("patternTransform")(patternTransform.asInstanceOf[js.Any])
-    if (patternUnits != null) __obj.updateDynamic("patternUnits")(patternUnits)
+    if (patternUnits != null) __obj.updateDynamic("patternUnits")(patternUnits.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (points != null) __obj.updateDynamic("points")(points)
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (pointsAtX != null) __obj.updateDynamic("pointsAtX")(pointsAtX.asInstanceOf[js.Any])
     if (pointsAtY != null) __obj.updateDynamic("pointsAtY")(pointsAtY.asInstanceOf[js.Any])
     if (pointsAtZ != null) __obj.updateDynamic("pointsAtZ")(pointsAtZ.asInstanceOf[js.Any])
-    if (preserveAlpha != null) __obj.updateDynamic("preserveAlpha")(preserveAlpha.asInstanceOf[js.Any])
-    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
+    if (!js.isUndefined(preserveAlpha)) __obj.updateDynamic("preserveAlpha")(preserveAlpha.asInstanceOf[js.Any])
+    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
     if (primitiveUnits != null) __obj.updateDynamic("primitiveUnits")(primitiveUnits.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
@@ -732,8 +737,8 @@ object SVGAttributes {
     if (requiredExtensions != null) __obj.updateDynamic("requiredExtensions")(requiredExtensions.asInstanceOf[js.Any])
     if (requiredFeatures != null) __obj.updateDynamic("requiredFeatures")(requiredFeatures.asInstanceOf[js.Any])
     if (restart != null) __obj.updateDynamic("restart")(restart.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
     if (ry != null) __obj.updateDynamic("ry")(ry.asInstanceOf[js.Any])
@@ -745,18 +750,18 @@ object SVGAttributes {
     if (specularConstant != null) __obj.updateDynamic("specularConstant")(specularConstant.asInstanceOf[js.Any])
     if (specularExponent != null) __obj.updateDynamic("specularExponent")(specularExponent.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (spreadMethod != null) __obj.updateDynamic("spreadMethod")(spreadMethod)
+    if (spreadMethod != null) __obj.updateDynamic("spreadMethod")(spreadMethod.asInstanceOf[js.Any])
     if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
     if (stdDeviation != null) __obj.updateDynamic("stdDeviation")(stdDeviation.asInstanceOf[js.Any])
     if (stemh != null) __obj.updateDynamic("stemh")(stemh.asInstanceOf[js.Any])
     if (stemv != null) __obj.updateDynamic("stemv")(stemv.asInstanceOf[js.Any])
     if (stitchTiles != null) __obj.updateDynamic("stitchTiles")(stitchTiles.asInstanceOf[js.Any])
-    if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor)
+    if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
     if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
     if (strikethroughPosition != null) __obj.updateDynamic("strikethroughPosition")(strikethroughPosition.asInstanceOf[js.Any])
     if (strikethroughThickness != null) __obj.updateDynamic("strikethroughThickness")(strikethroughThickness.asInstanceOf[js.Any])
     if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
     if (strokeDashoffset != null) __obj.updateDynamic("strokeDashoffset")(strokeDashoffset.asInstanceOf[js.Any])
     if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
@@ -764,21 +769,21 @@ object SVGAttributes {
     if (strokeMiterlimit != null) __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (surfaceScale != null) __obj.updateDynamic("surfaceScale")(surfaceScale.asInstanceOf[js.Any])
     if (systemLanguage != null) __obj.updateDynamic("systemLanguage")(systemLanguage.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tableValues != null) __obj.updateDynamic("tableValues")(tableValues.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (targetX != null) __obj.updateDynamic("targetX")(targetX.asInstanceOf[js.Any])
     if (targetY != null) __obj.updateDynamic("targetY")(targetY.asInstanceOf[js.Any])
-    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor)
+    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
     if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
     if (textLength != null) __obj.updateDynamic("textLength")(textLength.asInstanceOf[js.Any])
     if (textRendering != null) __obj.updateDynamic("textRendering")(textRendering.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (u1 != null) __obj.updateDynamic("u1")(u1.asInstanceOf[js.Any])
     if (u2 != null) __obj.updateDynamic("u2")(u2.asInstanceOf[js.Any])
     if (underlinePosition != null) __obj.updateDynamic("underlinePosition")(underlinePosition.asInstanceOf[js.Any])
@@ -791,13 +796,13 @@ object SVGAttributes {
     if (vHanging != null) __obj.updateDynamic("vHanging")(vHanging.asInstanceOf[js.Any])
     if (vIdeographic != null) __obj.updateDynamic("vIdeographic")(vIdeographic.asInstanceOf[js.Any])
     if (vMathematical != null) __obj.updateDynamic("vMathematical")(vMathematical.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (vectorEffect != null) __obj.updateDynamic("vectorEffect")(vectorEffect.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (vertAdvY != null) __obj.updateDynamic("vertAdvY")(vertAdvY.asInstanceOf[js.Any])
     if (vertOriginX != null) __obj.updateDynamic("vertOriginX")(vertOriginX.asInstanceOf[js.Any])
     if (vertOriginY != null) __obj.updateDynamic("vertOriginY")(vertOriginY.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     if (viewTarget != null) __obj.updateDynamic("viewTarget")(viewTarget.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
@@ -807,22 +812,21 @@ object SVGAttributes {
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
     if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
-    if (xChannelSelector != null) __obj.updateDynamic("xChannelSelector")(xChannelSelector)
+    if (xChannelSelector != null) __obj.updateDynamic("xChannelSelector")(xChannelSelector.asInstanceOf[js.Any])
     if (xHeight != null) __obj.updateDynamic("xHeight")(xHeight.asInstanceOf[js.Any])
-    if (xlinkActuate != null) __obj.updateDynamic("xlinkActuate")(xlinkActuate)
-    if (xlinkArcrole != null) __obj.updateDynamic("xlinkArcrole")(xlinkArcrole)
-    if (xlinkHref != null) __obj.updateDynamic("xlinkHref")(xlinkHref)
-    if (xlinkRole != null) __obj.updateDynamic("xlinkRole")(xlinkRole)
-    if (xlinkShow != null) __obj.updateDynamic("xlinkShow")(xlinkShow)
-    if (xlinkTitle != null) __obj.updateDynamic("xlinkTitle")(xlinkTitle)
-    if (xlinkType != null) __obj.updateDynamic("xlinkType")(xlinkType)
-    if (xmlBase != null) __obj.updateDynamic("xmlBase")(xmlBase)
-    if (xmlLang != null) __obj.updateDynamic("xmlLang")(xmlLang)
-    if (xmlSpace != null) __obj.updateDynamic("xmlSpace")(xmlSpace)
-    if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns)
-    if (xmlnsXlink != null) __obj.updateDynamic("xmlnsXlink")(xmlnsXlink)
+    if (xlinkActuate != null) __obj.updateDynamic("xlinkActuate")(xlinkActuate.asInstanceOf[js.Any])
+    if (xlinkArcrole != null) __obj.updateDynamic("xlinkArcrole")(xlinkArcrole.asInstanceOf[js.Any])
+    if (xlinkHref != null) __obj.updateDynamic("xlinkHref")(xlinkHref.asInstanceOf[js.Any])
+    if (xlinkRole != null) __obj.updateDynamic("xlinkRole")(xlinkRole.asInstanceOf[js.Any])
+    if (xlinkShow != null) __obj.updateDynamic("xlinkShow")(xlinkShow.asInstanceOf[js.Any])
+    if (xlinkTitle != null) __obj.updateDynamic("xlinkTitle")(xlinkTitle.asInstanceOf[js.Any])
+    if (xlinkType != null) __obj.updateDynamic("xlinkType")(xlinkType.asInstanceOf[js.Any])
+    if (xmlBase != null) __obj.updateDynamic("xmlBase")(xmlBase.asInstanceOf[js.Any])
+    if (xmlLang != null) __obj.updateDynamic("xmlLang")(xmlLang.asInstanceOf[js.Any])
+    if (xmlSpace != null) __obj.updateDynamic("xmlSpace")(xmlSpace.asInstanceOf[js.Any])
+    if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns.asInstanceOf[js.Any])
+    if (xmlnsXlink != null) __obj.updateDynamic("xmlnsXlink")(xmlnsXlink.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAttributes[T]]
   }
 }
