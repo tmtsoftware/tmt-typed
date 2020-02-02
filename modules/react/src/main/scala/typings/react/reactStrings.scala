@@ -1,7 +1,7 @@
 package typings.react
 
-import typings.react.experimentalMod.reactMod.SuspenseListRevealOrder
-import typings.react.experimentalMod.reactMod.SuspenseListTailMode
+import typings.react.mod.SuspenseListRevealOrder
+import typings.react.mod.SuspenseListTailMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,6 @@ object reactStrings {
   sealed trait A extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
-  
-  @js.native
   sealed trait Fn_TypeAny extends js.Object
   
   @js.native
@@ -24,6 +21,9 @@ object reactStrings {
   
   @js.native
   sealed trait WeakValidationMap extends js.Object
+  
+  @js.native
+  sealed trait _empty extends js.Object
   
   @js.native
   sealed trait a_ extends js.Object
@@ -91,7 +91,7 @@ object reactStrings {
   @js.native
   sealed trait backwards
     extends SuspenseListRevealOrder
-       with typings.react.reactMod.SuspenseListRevealOrder
+       with typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder
   
   @js.native
   sealed trait base extends js.Object
@@ -171,7 +171,7 @@ object reactStrings {
   @js.native
   sealed trait collapsed
     extends SuspenseListTailMode
-       with typings.react.reactMod.SuspenseListTailMode
+       with typings.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode
   
   @js.native
   sealed trait copy extends js.Object
@@ -338,7 +338,7 @@ object reactStrings {
   @js.native
   sealed trait forwards
     extends SuspenseListRevealOrder
-       with typings.react.reactMod.SuspenseListRevealOrder
+       with typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder
   
   @js.native
   sealed trait g extends js.Object
@@ -382,7 +382,7 @@ object reactStrings {
   @js.native
   sealed trait hidden
     extends SuspenseListTailMode
-       with typings.react.reactMod.SuspenseListTailMode
+       with typings.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -771,7 +771,7 @@ object reactStrings {
   @js.native
   sealed trait together
     extends SuspenseListRevealOrder
-       with typings.react.reactMod.SuspenseListRevealOrder
+       with typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder
   
   @js.native
   sealed trait top extends js.Object
@@ -835,13 +835,13 @@ object reactStrings {
   @scala.inline
   def A: A = "A".asInstanceOf[A]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def Fn_TypeAny: Fn_TypeAny = "Fn_TypeAny".asInstanceOf[Fn_TypeAny]
   @scala.inline
   def I: I = "I".asInstanceOf[I]
   @scala.inline
   def WeakValidationMap: WeakValidationMap = "WeakValidationMap".asInstanceOf[WeakValidationMap]
+  @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def a_ : a_ = "a".asInstanceOf[a_]
   @scala.inline

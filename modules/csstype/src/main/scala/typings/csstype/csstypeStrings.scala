@@ -1,394 +1,394 @@
 package typings.csstype
 
-import typings.csstype.csstypeMod.AbsoluteSize
-import typings.csstype.csstypeMod.AdvancedPseudos
-import typings.csstype.csstypeMod.AlignmentBaselineProperty
-import typings.csstype.csstypeMod.AppearanceProperty
-import typings.csstype.csstypeMod.AtRules
-import typings.csstype.csstypeMod.Attachment
-import typings.csstype.csstypeMod.BackfaceVisibilityProperty
-import typings.csstype.csstypeMod.BlendMode
-import typings.csstype.csstypeMod.BorderBlockEndStyleProperty
-import typings.csstype.csstypeMod.BorderBlockStartStyleProperty
-import typings.csstype.csstypeMod.BorderBlockStyleProperty
-import typings.csstype.csstypeMod.BorderBottomStyleProperty
-import typings.csstype.csstypeMod.BorderCollapseProperty
-import typings.csstype.csstypeMod.BorderInlineEndStyleProperty
-import typings.csstype.csstypeMod.BorderInlineStartStyleProperty
-import typings.csstype.csstypeMod.BorderInlineStyleProperty
-import typings.csstype.csstypeMod.BorderLeftStyleProperty
-import typings.csstype.csstypeMod.BorderRightStyleProperty
-import typings.csstype.csstypeMod.BorderTopStyleProperty
-import typings.csstype.csstypeMod.Box
-import typings.csstype.csstypeMod.BoxAlignProperty
-import typings.csstype.csstypeMod.BoxDecorationBreakProperty
-import typings.csstype.csstypeMod.BoxDirectionProperty
-import typings.csstype.csstypeMod.BoxLinesProperty
-import typings.csstype.csstypeMod.BoxOrientProperty
-import typings.csstype.csstypeMod.BoxPackProperty
-import typings.csstype.csstypeMod.BoxSizingProperty
-import typings.csstype.csstypeMod.BreakAfterProperty
-import typings.csstype.csstypeMod.BreakBeforeProperty
-import typings.csstype.csstypeMod.BreakInsideProperty
-import typings.csstype.csstypeMod.CaptionSideProperty
-import typings.csstype.csstypeMod.ClearProperty
-import typings.csstype.csstypeMod.ClipRuleProperty
-import typings.csstype.csstypeMod.ColorAdjustProperty
-import typings.csstype.csstypeMod.ColorInterpolationProperty
-import typings.csstype.csstypeMod.ColorRenderingProperty
-import typings.csstype.csstypeMod.ColumnFillProperty
-import typings.csstype.csstypeMod.ColumnSpanProperty
-import typings.csstype.csstypeMod.Compat
-import typings.csstype.csstypeMod.CompositeStyle
-import typings.csstype.csstypeMod.CompositingOperator
-import typings.csstype.csstypeMod.ContentDistribution
-import typings.csstype.csstypeMod.ContentPosition
-import typings.csstype.csstypeMod.DeprecatedSystemColor
-import typings.csstype.csstypeMod.DirectionProperty
-import typings.csstype.csstypeMod.DisplayInside
-import typings.csstype.csstypeMod.DisplayInternal
-import typings.csstype.csstypeMod.DisplayLegacy
-import typings.csstype.csstypeMod.DisplayOutside
-import typings.csstype.csstypeMod.DominantBaselineProperty
-import typings.csstype.csstypeMod.EastAsianVariantValues
-import typings.csstype.csstypeMod.EmptyCellsProperty
-import typings.csstype.csstypeMod.FillRuleProperty
-import typings.csstype.csstypeMod.FlexDirectionProperty
-import typings.csstype.csstypeMod.FlexWrapProperty
-import typings.csstype.csstypeMod.FloatProperty
-import typings.csstype.csstypeMod.FontFaceFontDisplayProperty
-import typings.csstype.csstypeMod.FontKerningProperty
-import typings.csstype.csstypeMod.FontOpticalSizingProperty
-import typings.csstype.csstypeMod.FontVariantCapsProperty
-import typings.csstype.csstypeMod.FontVariantPositionProperty
-import typings.csstype.csstypeMod.GenericFamily
-import typings.csstype.csstypeMod.GeometryBox
-import typings.csstype.csstypeMod.Globals
-import typings.csstype.csstypeMod.HtmlAttributes
-import typings.csstype.csstypeMod.HyphensProperty
-import typings.csstype.csstypeMod.ImageRenderingProperty
-import typings.csstype.csstypeMod.ImeModeProperty
-import typings.csstype.csstypeMod.IsolationProperty
-import typings.csstype.csstypeMod.LineBreakProperty
-import typings.csstype.csstypeMod.LineStyle
-import typings.csstype.csstypeMod.ListStylePositionProperty
-import typings.csstype.csstypeMod.MaskBorderModeProperty
-import typings.csstype.csstypeMod.MaskTypeProperty
-import typings.csstype.csstypeMod.MaskingMode
-import typings.csstype.csstypeMod.MixBlendModeProperty
-import typings.csstype.csstypeMod.MozAppearanceProperty
-import typings.csstype.csstypeMod.MozFloatEdgeProperty
-import typings.csstype.csstypeMod.MozOrientProperty
-import typings.csstype.csstypeMod.MozStackSizingProperty
-import typings.csstype.csstypeMod.MozTextBlinkProperty
-import typings.csstype.csstypeMod.MozUserFocusProperty
-import typings.csstype.csstypeMod.MozUserInputProperty
-import typings.csstype.csstypeMod.MozUserModifyProperty
-import typings.csstype.csstypeMod.MozWindowDraggingProperty
-import typings.csstype.csstypeMod.MozWindowShadowProperty
-import typings.csstype.csstypeMod.MsAcceleratorProperty
-import typings.csstype.csstypeMod.MsBlockProgressionProperty
-import typings.csstype.csstypeMod.MsContentZoomChainingProperty
-import typings.csstype.csstypeMod.MsContentZoomSnapTypeProperty
-import typings.csstype.csstypeMod.MsContentZoomingProperty
-import typings.csstype.csstypeMod.MsHighContrastAdjustProperty
-import typings.csstype.csstypeMod.MsImeAlignProperty
-import typings.csstype.csstypeMod.MsOverflowStyleProperty
-import typings.csstype.csstypeMod.MsScrollChainingProperty
-import typings.csstype.csstypeMod.MsScrollRailsProperty
-import typings.csstype.csstypeMod.MsScrollSnapTypeProperty
-import typings.csstype.csstypeMod.MsScrollTranslationProperty
-import typings.csstype.csstypeMod.MsTextAutospaceProperty
-import typings.csstype.csstypeMod.MsTouchSelectProperty
-import typings.csstype.csstypeMod.MsUserSelectProperty
-import typings.csstype.csstypeMod.MsWrapFlowProperty
-import typings.csstype.csstypeMod.MsWrapThroughProperty
-import typings.csstype.csstypeMod.NamedColor
-import typings.csstype.csstypeMod.ObjectFitProperty
-import typings.csstype.csstypeMod.OverflowAnchorProperty
-import typings.csstype.csstypeMod.OverflowBlockProperty
-import typings.csstype.csstypeMod.OverflowClipBoxProperty
-import typings.csstype.csstypeMod.OverflowInlineProperty
-import typings.csstype.csstypeMod.OverflowWrapProperty
-import typings.csstype.csstypeMod.OverflowXProperty
-import typings.csstype.csstypeMod.OverflowYProperty
-import typings.csstype.csstypeMod.OverscrollBehaviorXProperty
-import typings.csstype.csstypeMod.OverscrollBehaviorYProperty
-import typings.csstype.csstypeMod.PageBreakAfterProperty
-import typings.csstype.csstypeMod.PageBreakBeforeProperty
-import typings.csstype.csstypeMod.PageBreakInsideProperty
-import typings.csstype.csstypeMod.PointerEventsProperty
-import typings.csstype.csstypeMod.PositionProperty
-import typings.csstype.csstypeMod.Pseudos
-import typings.csstype.csstypeMod.Quote
-import typings.csstype.csstypeMod.ResizeProperty
-import typings.csstype.csstypeMod.RubyAlignProperty
-import typings.csstype.csstypeMod.RubyMergeProperty
-import typings.csstype.csstypeMod.RubyPositionProperty
-import typings.csstype.csstypeMod.ScrollBehaviorProperty
-import typings.csstype.csstypeMod.ScrollSnapStopProperty
-import typings.csstype.csstypeMod.ScrollSnapTypeXProperty
-import typings.csstype.csstypeMod.ScrollSnapTypeYProperty
-import typings.csstype.csstypeMod.ScrollbarWidthProperty
-import typings.csstype.csstypeMod.SelfPosition
-import typings.csstype.csstypeMod.ShapeRenderingProperty
-import typings.csstype.csstypeMod.SimplePseudos
-import typings.csstype.csstypeMod.SingleAnimationDirection
-import typings.csstype.csstypeMod.SingleAnimationFillMode
-import typings.csstype.csstypeMod.StrokeLinecapProperty
-import typings.csstype.csstypeMod.StrokeLinejoinProperty
-import typings.csstype.csstypeMod.SvgAttributes
-import typings.csstype.csstypeMod.TableLayoutProperty
-import typings.csstype.csstypeMod.TextAlignLastProperty
-import typings.csstype.csstypeMod.TextAlignProperty
-import typings.csstype.csstypeMod.TextAnchorProperty
-import typings.csstype.csstypeMod.TextDecorationSkipInkProperty
-import typings.csstype.csstypeMod.TextDecorationStyleProperty
-import typings.csstype.csstypeMod.TextJustifyProperty
-import typings.csstype.csstypeMod.TextOrientationProperty
-import typings.csstype.csstypeMod.TextRenderingProperty
-import typings.csstype.csstypeMod.TextTransformProperty
-import typings.csstype.csstypeMod.TransformBoxProperty
-import typings.csstype.csstypeMod.TransformStyleProperty
-import typings.csstype.csstypeMod.UnicodeBidiProperty
-import typings.csstype.csstypeMod.UserSelectProperty
-import typings.csstype.csstypeMod.VectorEffectProperty
-import typings.csstype.csstypeMod.ViewportOrientationProperty
-import typings.csstype.csstypeMod.ViewportUserZoomProperty
-import typings.csstype.csstypeMod.VisibilityProperty
-import typings.csstype.csstypeMod.WebkitAppearanceProperty
-import typings.csstype.csstypeMod.WebkitMaskRepeatXProperty
-import typings.csstype.csstypeMod.WebkitMaskRepeatYProperty
-import typings.csstype.csstypeMod.WebkitOverflowScrollingProperty
-import typings.csstype.csstypeMod.WebkitTouchCalloutProperty
-import typings.csstype.csstypeMod.WebkitUserModifyProperty
-import typings.csstype.csstypeMod.WhiteSpaceProperty
-import typings.csstype.csstypeMod.WordBreakProperty
-import typings.csstype.csstypeMod.WordWrapProperty
-import typings.csstype.csstypeMod.WritingModeProperty
-import typings.csstype.csstypeMod._AlignContentProperty
-import typings.csstype.csstypeMod._AlignItemsProperty
-import typings.csstype.csstypeMod._AlignSelfProperty
-import typings.csstype.csstypeMod._AnimateableFeature
-import typings.csstype.csstypeMod._AnimationIterationCountProperty
-import typings.csstype.csstypeMod._AnimationNameProperty
-import typings.csstype.csstypeMod._AnimationPlayStateProperty
-import typings.csstype.csstypeMod._BackdropFilterProperty
-import typings.csstype.csstypeMod._BackgroundImageProperty
-import typings.csstype.csstypeMod._BackgroundPositionXProperty
-import typings.csstype.csstypeMod._BackgroundPositionYProperty
-import typings.csstype.csstypeMod._BaselineShiftProperty
-import typings.csstype.csstypeMod._BgPosition
-import typings.csstype.csstypeMod._BgSize
-import typings.csstype.csstypeMod._BlockOverflowProperty
-import typings.csstype.csstypeMod._BlockSizeProperty
-import typings.csstype.csstypeMod._BorderImageProperty
-import typings.csstype.csstypeMod._BorderImageRepeatProperty
-import typings.csstype.csstypeMod._BorderImageSourceProperty
-import typings.csstype.csstypeMod._BorderImageWidthProperty
-import typings.csstype.csstypeMod._BottomProperty
-import typings.csstype.csstypeMod._BoxShadowProperty
-import typings.csstype.csstypeMod._CaretColorProperty
-import typings.csstype.csstypeMod._ClipPathProperty
-import typings.csstype.csstypeMod._ClipProperty
-import typings.csstype.csstypeMod._Color
-import typings.csstype.csstypeMod._ColumnCountProperty
-import typings.csstype.csstypeMod._ColumnGapProperty
-import typings.csstype.csstypeMod._ColumnWidthProperty
-import typings.csstype.csstypeMod._ColumnsProperty
-import typings.csstype.csstypeMod._ContainProperty
-import typings.csstype.csstypeMod._ContentList
-import typings.csstype.csstypeMod._ContentProperty
-import typings.csstype.csstypeMod._CounterIncrementProperty
-import typings.csstype.csstypeMod._CounterResetProperty
-import typings.csstype.csstypeMod._CounterSetProperty
-import typings.csstype.csstypeMod._CounterStyleRangeProperty
-import typings.csstype.csstypeMod._CounterStyleSpeakAsProperty
-import typings.csstype.csstypeMod._CounterStyleSystemProperty
-import typings.csstype.csstypeMod._CubicBezierTimingFunction
-import typings.csstype.csstypeMod._CursorProperty
-import typings.csstype.csstypeMod._DisplayProperty
-import typings.csstype.csstypeMod._FilterProperty
-import typings.csstype.csstypeMod._FinalBgLayer
-import typings.csstype.csstypeMod._FlexBasisProperty
-import typings.csstype.csstypeMod._FlexFlowProperty
-import typings.csstype.csstypeMod._FlexProperty
-import typings.csstype.csstypeMod._FloodColorProperty
-import typings.csstype.csstypeMod._FontFaceFontStyleProperty
-import typings.csstype.csstypeMod._FontFaceFontVariantProperty
-import typings.csstype.csstypeMod._FontFeatureSettingsProperty
-import typings.csstype.csstypeMod._FontLanguageOverrideProperty
-import typings.csstype.csstypeMod._FontProperty
-import typings.csstype.csstypeMod._FontSizeAdjustProperty
-import typings.csstype.csstypeMod._FontSizeProperty
-import typings.csstype.csstypeMod._FontStretchAbsolute
-import typings.csstype.csstypeMod._FontStyleProperty
-import typings.csstype.csstypeMod._FontSynthesisProperty
-import typings.csstype.csstypeMod._FontVariantAlternatesProperty
-import typings.csstype.csstypeMod._FontVariantEastAsianProperty
-import typings.csstype.csstypeMod._FontVariantLigaturesProperty
-import typings.csstype.csstypeMod._FontVariantNumericProperty
-import typings.csstype.csstypeMod._FontVariantProperty
-import typings.csstype.csstypeMod._FontVariationSettingsProperty
-import typings.csstype.csstypeMod._FontWeightAbsolute
-import typings.csstype.csstypeMod._FontWeightProperty
-import typings.csstype.csstypeMod._GapProperty
-import typings.csstype.csstypeMod._GlyphOrientationVerticalProperty
-import typings.csstype.csstypeMod._GridAutoFlowProperty
-import typings.csstype.csstypeMod._GridProperty
-import typings.csstype.csstypeMod._GridTemplateAreasProperty
-import typings.csstype.csstypeMod._GridTemplateColumnsProperty
-import typings.csstype.csstypeMod._GridTemplateProperty
-import typings.csstype.csstypeMod._GridTemplateRowsProperty
-import typings.csstype.csstypeMod._HangingPunctuationProperty
-import typings.csstype.csstypeMod._HeightProperty
-import typings.csstype.csstypeMod._ImageOrientationProperty
-import typings.csstype.csstypeMod._ImageResolutionProperty
-import typings.csstype.csstypeMod._InitialLetterProperty
-import typings.csstype.csstypeMod._InlineSizeProperty
-import typings.csstype.csstypeMod._InsetBlockEndProperty
-import typings.csstype.csstypeMod._InsetBlockProperty
-import typings.csstype.csstypeMod._InsetBlockStartProperty
-import typings.csstype.csstypeMod._InsetInlineEndProperty
-import typings.csstype.csstypeMod._InsetInlineProperty
-import typings.csstype.csstypeMod._InsetInlineStartProperty
-import typings.csstype.csstypeMod._InsetProperty
-import typings.csstype.csstypeMod._JustifyContentProperty
-import typings.csstype.csstypeMod._JustifyItemsProperty
-import typings.csstype.csstypeMod._JustifySelfProperty
-import typings.csstype.csstypeMod._LeftProperty
-import typings.csstype.csstypeMod._LetterSpacingProperty
-import typings.csstype.csstypeMod._LightingColorProperty
-import typings.csstype.csstypeMod._LineClampProperty
-import typings.csstype.csstypeMod._LineHeightProperty
-import typings.csstype.csstypeMod._LineWidth
-import typings.csstype.csstypeMod._ListStyleImageProperty
-import typings.csstype.csstypeMod._ListStyleProperty
-import typings.csstype.csstypeMod._ListStyleTypeProperty
-import typings.csstype.csstypeMod._MarginBlockEndProperty
-import typings.csstype.csstypeMod._MarginBlockProperty
-import typings.csstype.csstypeMod._MarginBlockStartProperty
-import typings.csstype.csstypeMod._MarginBottomProperty
-import typings.csstype.csstypeMod._MarginInlineEndProperty
-import typings.csstype.csstypeMod._MarginInlineProperty
-import typings.csstype.csstypeMod._MarginInlineStartProperty
-import typings.csstype.csstypeMod._MarginLeftProperty
-import typings.csstype.csstypeMod._MarginProperty
-import typings.csstype.csstypeMod._MarginRightProperty
-import typings.csstype.csstypeMod._MarginTopProperty
-import typings.csstype.csstypeMod._MarkerEndProperty
-import typings.csstype.csstypeMod._MarkerMidProperty
-import typings.csstype.csstypeMod._MarkerProperty
-import typings.csstype.csstypeMod._MarkerStartProperty
-import typings.csstype.csstypeMod._MaskBorderProperty
-import typings.csstype.csstypeMod._MaskBorderRepeatProperty
-import typings.csstype.csstypeMod._MaskBorderSourceProperty
-import typings.csstype.csstypeMod._MaskBorderWidthProperty
-import typings.csstype.csstypeMod._MaskClipProperty
-import typings.csstype.csstypeMod._MaskImageProperty
-import typings.csstype.csstypeMod._MaskLayer
-import typings.csstype.csstypeMod._MaxBlockSizeProperty
-import typings.csstype.csstypeMod._MaxHeightProperty
-import typings.csstype.csstypeMod._MaxInlineSizeProperty
-import typings.csstype.csstypeMod._MaxLinesProperty
-import typings.csstype.csstypeMod._MaxWidthProperty
-import typings.csstype.csstypeMod._MinBlockSizeProperty
-import typings.csstype.csstypeMod._MinHeightProperty
-import typings.csstype.csstypeMod._MinInlineSizeProperty
-import typings.csstype.csstypeMod._MinWidthProperty
-import typings.csstype.csstypeMod._MozBindingProperty
-import typings.csstype.csstypeMod._MozBorderBottomColorsProperty
-import typings.csstype.csstypeMod._MozBorderLeftColorsProperty
-import typings.csstype.csstypeMod._MozBorderRightColorsProperty
-import typings.csstype.csstypeMod._MozBorderTopColorsProperty
-import typings.csstype.csstypeMod._MozContextPropertiesProperty
-import typings.csstype.csstypeMod._MozImageRegionProperty
-import typings.csstype.csstypeMod._MsContentZoomSnapProperty
-import typings.csstype.csstypeMod._MsFlowFromProperty
-import typings.csstype.csstypeMod._MsFlowIntoProperty
-import typings.csstype.csstypeMod._MsHyphenateLimitCharsProperty
-import typings.csstype.csstypeMod._MsHyphenateLimitLinesProperty
-import typings.csstype.csstypeMod._MsScrollLimitXMaxProperty
-import typings.csstype.csstypeMod._MsScrollLimitYMaxProperty
-import typings.csstype.csstypeMod._OffsetAnchorProperty
-import typings.csstype.csstypeMod._OffsetPathProperty
-import typings.csstype.csstypeMod._OffsetPositionProperty
-import typings.csstype.csstypeMod._OffsetProperty
-import typings.csstype.csstypeMod._OffsetRotateProperty
-import typings.csstype.csstypeMod._OutlineColorProperty
-import typings.csstype.csstypeMod._OutlineProperty
-import typings.csstype.csstypeMod._OutlineStyleProperty
-import typings.csstype.csstypeMod._OverflowProperty
-import typings.csstype.csstypeMod._OverscrollBehaviorProperty
-import typings.csstype.csstypeMod._PageMarksProperty
-import typings.csstype.csstypeMod._Paint
-import typings.csstype.csstypeMod._PaintOrderProperty
-import typings.csstype.csstypeMod._PerspectiveProperty
-import typings.csstype.csstypeMod._PlaceContentProperty
-import typings.csstype.csstypeMod._PlaceItemsProperty
-import typings.csstype.csstypeMod._PlaceSelfProperty
-import typings.csstype.csstypeMod._Position
-import typings.csstype.csstypeMod._QuotesProperty
-import typings.csstype.csstypeMod._RepeatStyle
-import typings.csstype.csstypeMod._RightProperty
-import typings.csstype.csstypeMod._RotateProperty
-import typings.csstype.csstypeMod._RowGapProperty
-import typings.csstype.csstypeMod._ScaleProperty
-import typings.csstype.csstypeMod._ScrollPaddingBlockEndProperty
-import typings.csstype.csstypeMod._ScrollPaddingBlockProperty
-import typings.csstype.csstypeMod._ScrollPaddingBlockStartProperty
-import typings.csstype.csstypeMod._ScrollPaddingBottomProperty
-import typings.csstype.csstypeMod._ScrollPaddingInlineEndProperty
-import typings.csstype.csstypeMod._ScrollPaddingInlineProperty
-import typings.csstype.csstypeMod._ScrollPaddingInlineStartProperty
-import typings.csstype.csstypeMod._ScrollPaddingLeftProperty
-import typings.csstype.csstypeMod._ScrollPaddingProperty
-import typings.csstype.csstypeMod._ScrollPaddingRightProperty
-import typings.csstype.csstypeMod._ScrollPaddingTopProperty
-import typings.csstype.csstypeMod._ScrollSnapAlignProperty
-import typings.csstype.csstypeMod._ScrollSnapCoordinateProperty
-import typings.csstype.csstypeMod._ScrollSnapPointsXProperty
-import typings.csstype.csstypeMod._ScrollSnapPointsYProperty
-import typings.csstype.csstypeMod._ScrollSnapTypeProperty
-import typings.csstype.csstypeMod._ScrollbarColorProperty
-import typings.csstype.csstypeMod._ShapeOutsideProperty
-import typings.csstype.csstypeMod._SingleAnimation
-import typings.csstype.csstypeMod._SingleTransition
-import typings.csstype.csstypeMod._StepTimingFunction
-import typings.csstype.csstypeMod._StopColorProperty
-import typings.csstype.csstypeMod._StrokeDasharrayProperty
-import typings.csstype.csstypeMod._TextCombineUprightProperty
-import typings.csstype.csstypeMod._TextDecorationLineProperty
-import typings.csstype.csstypeMod._TextDecorationProperty
-import typings.csstype.csstypeMod._TextDecorationSkipProperty
-import typings.csstype.csstypeMod._TextEmphasisProperty
-import typings.csstype.csstypeMod._TextEmphasisStyleProperty
-import typings.csstype.csstypeMod._TextOverflowProperty
-import typings.csstype.csstypeMod._TextShadowProperty
-import typings.csstype.csstypeMod._TextSizeAdjustProperty
-import typings.csstype.csstypeMod._TextUnderlinePositionProperty
-import typings.csstype.csstypeMod._TimingFunction
-import typings.csstype.csstypeMod._TopProperty
-import typings.csstype.csstypeMod._TouchActionProperty
-import typings.csstype.csstypeMod._TrackBreadth
-import typings.csstype.csstypeMod._TransformOriginProperty
-import typings.csstype.csstypeMod._TransformProperty
-import typings.csstype.csstypeMod._TransitionPropertyProperty
-import typings.csstype.csstypeMod._TranslateProperty
-import typings.csstype.csstypeMod._VerticalAlignProperty
-import typings.csstype.csstypeMod._WebkitBoxReflectProperty
-import typings.csstype.csstypeMod._WebkitLineClampProperty
-import typings.csstype.csstypeMod._WebkitMaskClipProperty
-import typings.csstype.csstypeMod._WebkitMaskImageProperty
-import typings.csstype.csstypeMod._WebkitMaskOriginProperty
-import typings.csstype.csstypeMod._WebkitMaskPositionXProperty
-import typings.csstype.csstypeMod._WebkitMaskPositionYProperty
-import typings.csstype.csstypeMod._WebkitMaskProperty
-import typings.csstype.csstypeMod._WidthProperty
-import typings.csstype.csstypeMod._WillChangeProperty
-import typings.csstype.csstypeMod._WordSpacingProperty
-import typings.csstype.csstypeMod._ZIndexProperty
-import typings.csstype.csstypeMod._ZoomProperty
+import typings.csstype.mod.AbsoluteSize
+import typings.csstype.mod.AdvancedPseudos
+import typings.csstype.mod.AlignmentBaselineProperty
+import typings.csstype.mod.AppearanceProperty
+import typings.csstype.mod.AtRules
+import typings.csstype.mod.Attachment
+import typings.csstype.mod.BackfaceVisibilityProperty
+import typings.csstype.mod.BlendMode
+import typings.csstype.mod.BorderBlockEndStyleProperty
+import typings.csstype.mod.BorderBlockStartStyleProperty
+import typings.csstype.mod.BorderBlockStyleProperty
+import typings.csstype.mod.BorderBottomStyleProperty
+import typings.csstype.mod.BorderCollapseProperty
+import typings.csstype.mod.BorderInlineEndStyleProperty
+import typings.csstype.mod.BorderInlineStartStyleProperty
+import typings.csstype.mod.BorderInlineStyleProperty
+import typings.csstype.mod.BorderLeftStyleProperty
+import typings.csstype.mod.BorderRightStyleProperty
+import typings.csstype.mod.BorderTopStyleProperty
+import typings.csstype.mod.Box
+import typings.csstype.mod.BoxAlignProperty
+import typings.csstype.mod.BoxDecorationBreakProperty
+import typings.csstype.mod.BoxDirectionProperty
+import typings.csstype.mod.BoxLinesProperty
+import typings.csstype.mod.BoxOrientProperty
+import typings.csstype.mod.BoxPackProperty
+import typings.csstype.mod.BoxSizingProperty
+import typings.csstype.mod.BreakAfterProperty
+import typings.csstype.mod.BreakBeforeProperty
+import typings.csstype.mod.BreakInsideProperty
+import typings.csstype.mod.CaptionSideProperty
+import typings.csstype.mod.ClearProperty
+import typings.csstype.mod.ClipRuleProperty
+import typings.csstype.mod.ColorAdjustProperty
+import typings.csstype.mod.ColorInterpolationProperty
+import typings.csstype.mod.ColorRenderingProperty
+import typings.csstype.mod.ColumnFillProperty
+import typings.csstype.mod.ColumnSpanProperty
+import typings.csstype.mod.Compat
+import typings.csstype.mod.CompositeStyle
+import typings.csstype.mod.CompositingOperator
+import typings.csstype.mod.ContentDistribution
+import typings.csstype.mod.ContentPosition
+import typings.csstype.mod.DeprecatedSystemColor
+import typings.csstype.mod.DirectionProperty
+import typings.csstype.mod.DisplayInside
+import typings.csstype.mod.DisplayInternal
+import typings.csstype.mod.DisplayLegacy
+import typings.csstype.mod.DisplayOutside
+import typings.csstype.mod.DominantBaselineProperty
+import typings.csstype.mod.EastAsianVariantValues
+import typings.csstype.mod.EmptyCellsProperty
+import typings.csstype.mod.FillRuleProperty
+import typings.csstype.mod.FlexDirectionProperty
+import typings.csstype.mod.FlexWrapProperty
+import typings.csstype.mod.FloatProperty
+import typings.csstype.mod.FontFaceFontDisplayProperty
+import typings.csstype.mod.FontKerningProperty
+import typings.csstype.mod.FontOpticalSizingProperty
+import typings.csstype.mod.FontVariantCapsProperty
+import typings.csstype.mod.FontVariantPositionProperty
+import typings.csstype.mod.GenericFamily
+import typings.csstype.mod.GeometryBox
+import typings.csstype.mod.Globals
+import typings.csstype.mod.HtmlAttributes
+import typings.csstype.mod.HyphensProperty
+import typings.csstype.mod.ImageRenderingProperty
+import typings.csstype.mod.ImeModeProperty
+import typings.csstype.mod.IsolationProperty
+import typings.csstype.mod.LineBreakProperty
+import typings.csstype.mod.LineStyle
+import typings.csstype.mod.ListStylePositionProperty
+import typings.csstype.mod.MaskBorderModeProperty
+import typings.csstype.mod.MaskTypeProperty
+import typings.csstype.mod.MaskingMode
+import typings.csstype.mod.MixBlendModeProperty
+import typings.csstype.mod.MozAppearanceProperty
+import typings.csstype.mod.MozFloatEdgeProperty
+import typings.csstype.mod.MozOrientProperty
+import typings.csstype.mod.MozStackSizingProperty
+import typings.csstype.mod.MozTextBlinkProperty
+import typings.csstype.mod.MozUserFocusProperty
+import typings.csstype.mod.MozUserInputProperty
+import typings.csstype.mod.MozUserModifyProperty
+import typings.csstype.mod.MozWindowDraggingProperty
+import typings.csstype.mod.MozWindowShadowProperty
+import typings.csstype.mod.MsAcceleratorProperty
+import typings.csstype.mod.MsBlockProgressionProperty
+import typings.csstype.mod.MsContentZoomChainingProperty
+import typings.csstype.mod.MsContentZoomSnapTypeProperty
+import typings.csstype.mod.MsContentZoomingProperty
+import typings.csstype.mod.MsHighContrastAdjustProperty
+import typings.csstype.mod.MsImeAlignProperty
+import typings.csstype.mod.MsOverflowStyleProperty
+import typings.csstype.mod.MsScrollChainingProperty
+import typings.csstype.mod.MsScrollRailsProperty
+import typings.csstype.mod.MsScrollSnapTypeProperty
+import typings.csstype.mod.MsScrollTranslationProperty
+import typings.csstype.mod.MsTextAutospaceProperty
+import typings.csstype.mod.MsTouchSelectProperty
+import typings.csstype.mod.MsUserSelectProperty
+import typings.csstype.mod.MsWrapFlowProperty
+import typings.csstype.mod.MsWrapThroughProperty
+import typings.csstype.mod.NamedColor
+import typings.csstype.mod.ObjectFitProperty
+import typings.csstype.mod.OverflowAnchorProperty
+import typings.csstype.mod.OverflowBlockProperty
+import typings.csstype.mod.OverflowClipBoxProperty
+import typings.csstype.mod.OverflowInlineProperty
+import typings.csstype.mod.OverflowWrapProperty
+import typings.csstype.mod.OverflowXProperty
+import typings.csstype.mod.OverflowYProperty
+import typings.csstype.mod.OverscrollBehaviorXProperty
+import typings.csstype.mod.OverscrollBehaviorYProperty
+import typings.csstype.mod.PageBreakAfterProperty
+import typings.csstype.mod.PageBreakBeforeProperty
+import typings.csstype.mod.PageBreakInsideProperty
+import typings.csstype.mod.PointerEventsProperty
+import typings.csstype.mod.PositionProperty
+import typings.csstype.mod.Pseudos
+import typings.csstype.mod.Quote
+import typings.csstype.mod.ResizeProperty
+import typings.csstype.mod.RubyAlignProperty
+import typings.csstype.mod.RubyMergeProperty
+import typings.csstype.mod.RubyPositionProperty
+import typings.csstype.mod.ScrollBehaviorProperty
+import typings.csstype.mod.ScrollSnapStopProperty
+import typings.csstype.mod.ScrollSnapTypeXProperty
+import typings.csstype.mod.ScrollSnapTypeYProperty
+import typings.csstype.mod.ScrollbarWidthProperty
+import typings.csstype.mod.SelfPosition
+import typings.csstype.mod.ShapeRenderingProperty
+import typings.csstype.mod.SimplePseudos
+import typings.csstype.mod.SingleAnimationDirection
+import typings.csstype.mod.SingleAnimationFillMode
+import typings.csstype.mod.StrokeLinecapProperty
+import typings.csstype.mod.StrokeLinejoinProperty
+import typings.csstype.mod.SvgAttributes
+import typings.csstype.mod.TableLayoutProperty
+import typings.csstype.mod.TextAlignLastProperty
+import typings.csstype.mod.TextAlignProperty
+import typings.csstype.mod.TextAnchorProperty
+import typings.csstype.mod.TextDecorationSkipInkProperty
+import typings.csstype.mod.TextDecorationStyleProperty
+import typings.csstype.mod.TextJustifyProperty
+import typings.csstype.mod.TextOrientationProperty
+import typings.csstype.mod.TextRenderingProperty
+import typings.csstype.mod.TextTransformProperty
+import typings.csstype.mod.TransformBoxProperty
+import typings.csstype.mod.TransformStyleProperty
+import typings.csstype.mod.UnicodeBidiProperty
+import typings.csstype.mod.UserSelectProperty
+import typings.csstype.mod.VectorEffectProperty
+import typings.csstype.mod.ViewportOrientationProperty
+import typings.csstype.mod.ViewportUserZoomProperty
+import typings.csstype.mod.VisibilityProperty
+import typings.csstype.mod.WebkitAppearanceProperty
+import typings.csstype.mod.WebkitMaskRepeatXProperty
+import typings.csstype.mod.WebkitMaskRepeatYProperty
+import typings.csstype.mod.WebkitOverflowScrollingProperty
+import typings.csstype.mod.WebkitTouchCalloutProperty
+import typings.csstype.mod.WebkitUserModifyProperty
+import typings.csstype.mod.WhiteSpaceProperty
+import typings.csstype.mod.WordBreakProperty
+import typings.csstype.mod.WordWrapProperty
+import typings.csstype.mod.WritingModeProperty
+import typings.csstype.mod._AlignContentProperty
+import typings.csstype.mod._AlignItemsProperty
+import typings.csstype.mod._AlignSelfProperty
+import typings.csstype.mod._AnimateableFeature
+import typings.csstype.mod._AnimationIterationCountProperty
+import typings.csstype.mod._AnimationNameProperty
+import typings.csstype.mod._AnimationPlayStateProperty
+import typings.csstype.mod._BackdropFilterProperty
+import typings.csstype.mod._BackgroundImageProperty
+import typings.csstype.mod._BackgroundPositionXProperty
+import typings.csstype.mod._BackgroundPositionYProperty
+import typings.csstype.mod._BaselineShiftProperty
+import typings.csstype.mod._BgPosition
+import typings.csstype.mod._BgSize
+import typings.csstype.mod._BlockOverflowProperty
+import typings.csstype.mod._BlockSizeProperty
+import typings.csstype.mod._BorderImageProperty
+import typings.csstype.mod._BorderImageRepeatProperty
+import typings.csstype.mod._BorderImageSourceProperty
+import typings.csstype.mod._BorderImageWidthProperty
+import typings.csstype.mod._BottomProperty
+import typings.csstype.mod._BoxShadowProperty
+import typings.csstype.mod._CaretColorProperty
+import typings.csstype.mod._ClipPathProperty
+import typings.csstype.mod._ClipProperty
+import typings.csstype.mod._Color
+import typings.csstype.mod._ColumnCountProperty
+import typings.csstype.mod._ColumnGapProperty
+import typings.csstype.mod._ColumnWidthProperty
+import typings.csstype.mod._ColumnsProperty
+import typings.csstype.mod._ContainProperty
+import typings.csstype.mod._ContentList
+import typings.csstype.mod._ContentProperty
+import typings.csstype.mod._CounterIncrementProperty
+import typings.csstype.mod._CounterResetProperty
+import typings.csstype.mod._CounterSetProperty
+import typings.csstype.mod._CounterStyleRangeProperty
+import typings.csstype.mod._CounterStyleSpeakAsProperty
+import typings.csstype.mod._CounterStyleSystemProperty
+import typings.csstype.mod._CubicBezierTimingFunction
+import typings.csstype.mod._CursorProperty
+import typings.csstype.mod._DisplayProperty
+import typings.csstype.mod._FilterProperty
+import typings.csstype.mod._FinalBgLayer
+import typings.csstype.mod._FlexBasisProperty
+import typings.csstype.mod._FlexFlowProperty
+import typings.csstype.mod._FlexProperty
+import typings.csstype.mod._FloodColorProperty
+import typings.csstype.mod._FontFaceFontStyleProperty
+import typings.csstype.mod._FontFaceFontVariantProperty
+import typings.csstype.mod._FontFeatureSettingsProperty
+import typings.csstype.mod._FontLanguageOverrideProperty
+import typings.csstype.mod._FontProperty
+import typings.csstype.mod._FontSizeAdjustProperty
+import typings.csstype.mod._FontSizeProperty
+import typings.csstype.mod._FontStretchAbsolute
+import typings.csstype.mod._FontStyleProperty
+import typings.csstype.mod._FontSynthesisProperty
+import typings.csstype.mod._FontVariantAlternatesProperty
+import typings.csstype.mod._FontVariantEastAsianProperty
+import typings.csstype.mod._FontVariantLigaturesProperty
+import typings.csstype.mod._FontVariantNumericProperty
+import typings.csstype.mod._FontVariantProperty
+import typings.csstype.mod._FontVariationSettingsProperty
+import typings.csstype.mod._FontWeightAbsolute
+import typings.csstype.mod._FontWeightProperty
+import typings.csstype.mod._GapProperty
+import typings.csstype.mod._GlyphOrientationVerticalProperty
+import typings.csstype.mod._GridAutoFlowProperty
+import typings.csstype.mod._GridProperty
+import typings.csstype.mod._GridTemplateAreasProperty
+import typings.csstype.mod._GridTemplateColumnsProperty
+import typings.csstype.mod._GridTemplateProperty
+import typings.csstype.mod._GridTemplateRowsProperty
+import typings.csstype.mod._HangingPunctuationProperty
+import typings.csstype.mod._HeightProperty
+import typings.csstype.mod._ImageOrientationProperty
+import typings.csstype.mod._ImageResolutionProperty
+import typings.csstype.mod._InitialLetterProperty
+import typings.csstype.mod._InlineSizeProperty
+import typings.csstype.mod._InsetBlockEndProperty
+import typings.csstype.mod._InsetBlockProperty
+import typings.csstype.mod._InsetBlockStartProperty
+import typings.csstype.mod._InsetInlineEndProperty
+import typings.csstype.mod._InsetInlineProperty
+import typings.csstype.mod._InsetInlineStartProperty
+import typings.csstype.mod._InsetProperty
+import typings.csstype.mod._JustifyContentProperty
+import typings.csstype.mod._JustifyItemsProperty
+import typings.csstype.mod._JustifySelfProperty
+import typings.csstype.mod._LeftProperty
+import typings.csstype.mod._LetterSpacingProperty
+import typings.csstype.mod._LightingColorProperty
+import typings.csstype.mod._LineClampProperty
+import typings.csstype.mod._LineHeightProperty
+import typings.csstype.mod._LineWidth
+import typings.csstype.mod._ListStyleImageProperty
+import typings.csstype.mod._ListStyleProperty
+import typings.csstype.mod._ListStyleTypeProperty
+import typings.csstype.mod._MarginBlockEndProperty
+import typings.csstype.mod._MarginBlockProperty
+import typings.csstype.mod._MarginBlockStartProperty
+import typings.csstype.mod._MarginBottomProperty
+import typings.csstype.mod._MarginInlineEndProperty
+import typings.csstype.mod._MarginInlineProperty
+import typings.csstype.mod._MarginInlineStartProperty
+import typings.csstype.mod._MarginLeftProperty
+import typings.csstype.mod._MarginProperty
+import typings.csstype.mod._MarginRightProperty
+import typings.csstype.mod._MarginTopProperty
+import typings.csstype.mod._MarkerEndProperty
+import typings.csstype.mod._MarkerMidProperty
+import typings.csstype.mod._MarkerProperty
+import typings.csstype.mod._MarkerStartProperty
+import typings.csstype.mod._MaskBorderProperty
+import typings.csstype.mod._MaskBorderRepeatProperty
+import typings.csstype.mod._MaskBorderSourceProperty
+import typings.csstype.mod._MaskBorderWidthProperty
+import typings.csstype.mod._MaskClipProperty
+import typings.csstype.mod._MaskImageProperty
+import typings.csstype.mod._MaskLayer
+import typings.csstype.mod._MaxBlockSizeProperty
+import typings.csstype.mod._MaxHeightProperty
+import typings.csstype.mod._MaxInlineSizeProperty
+import typings.csstype.mod._MaxLinesProperty
+import typings.csstype.mod._MaxWidthProperty
+import typings.csstype.mod._MinBlockSizeProperty
+import typings.csstype.mod._MinHeightProperty
+import typings.csstype.mod._MinInlineSizeProperty
+import typings.csstype.mod._MinWidthProperty
+import typings.csstype.mod._MozBindingProperty
+import typings.csstype.mod._MozBorderBottomColorsProperty
+import typings.csstype.mod._MozBorderLeftColorsProperty
+import typings.csstype.mod._MozBorderRightColorsProperty
+import typings.csstype.mod._MozBorderTopColorsProperty
+import typings.csstype.mod._MozContextPropertiesProperty
+import typings.csstype.mod._MozImageRegionProperty
+import typings.csstype.mod._MsContentZoomSnapProperty
+import typings.csstype.mod._MsFlowFromProperty
+import typings.csstype.mod._MsFlowIntoProperty
+import typings.csstype.mod._MsHyphenateLimitCharsProperty
+import typings.csstype.mod._MsHyphenateLimitLinesProperty
+import typings.csstype.mod._MsScrollLimitXMaxProperty
+import typings.csstype.mod._MsScrollLimitYMaxProperty
+import typings.csstype.mod._OffsetAnchorProperty
+import typings.csstype.mod._OffsetPathProperty
+import typings.csstype.mod._OffsetPositionProperty
+import typings.csstype.mod._OffsetProperty
+import typings.csstype.mod._OffsetRotateProperty
+import typings.csstype.mod._OutlineColorProperty
+import typings.csstype.mod._OutlineProperty
+import typings.csstype.mod._OutlineStyleProperty
+import typings.csstype.mod._OverflowProperty
+import typings.csstype.mod._OverscrollBehaviorProperty
+import typings.csstype.mod._PageMarksProperty
+import typings.csstype.mod._Paint
+import typings.csstype.mod._PaintOrderProperty
+import typings.csstype.mod._PerspectiveProperty
+import typings.csstype.mod._PlaceContentProperty
+import typings.csstype.mod._PlaceItemsProperty
+import typings.csstype.mod._PlaceSelfProperty
+import typings.csstype.mod._Position
+import typings.csstype.mod._QuotesProperty
+import typings.csstype.mod._RepeatStyle
+import typings.csstype.mod._RightProperty
+import typings.csstype.mod._RotateProperty
+import typings.csstype.mod._RowGapProperty
+import typings.csstype.mod._ScaleProperty
+import typings.csstype.mod._ScrollPaddingBlockEndProperty
+import typings.csstype.mod._ScrollPaddingBlockProperty
+import typings.csstype.mod._ScrollPaddingBlockStartProperty
+import typings.csstype.mod._ScrollPaddingBottomProperty
+import typings.csstype.mod._ScrollPaddingInlineEndProperty
+import typings.csstype.mod._ScrollPaddingInlineProperty
+import typings.csstype.mod._ScrollPaddingInlineStartProperty
+import typings.csstype.mod._ScrollPaddingLeftProperty
+import typings.csstype.mod._ScrollPaddingProperty
+import typings.csstype.mod._ScrollPaddingRightProperty
+import typings.csstype.mod._ScrollPaddingTopProperty
+import typings.csstype.mod._ScrollSnapAlignProperty
+import typings.csstype.mod._ScrollSnapCoordinateProperty
+import typings.csstype.mod._ScrollSnapPointsXProperty
+import typings.csstype.mod._ScrollSnapPointsYProperty
+import typings.csstype.mod._ScrollSnapTypeProperty
+import typings.csstype.mod._ScrollbarColorProperty
+import typings.csstype.mod._ShapeOutsideProperty
+import typings.csstype.mod._SingleAnimation
+import typings.csstype.mod._SingleTransition
+import typings.csstype.mod._StepTimingFunction
+import typings.csstype.mod._StopColorProperty
+import typings.csstype.mod._StrokeDasharrayProperty
+import typings.csstype.mod._TextCombineUprightProperty
+import typings.csstype.mod._TextDecorationLineProperty
+import typings.csstype.mod._TextDecorationProperty
+import typings.csstype.mod._TextDecorationSkipProperty
+import typings.csstype.mod._TextEmphasisProperty
+import typings.csstype.mod._TextEmphasisStyleProperty
+import typings.csstype.mod._TextOverflowProperty
+import typings.csstype.mod._TextShadowProperty
+import typings.csstype.mod._TextSizeAdjustProperty
+import typings.csstype.mod._TextUnderlinePositionProperty
+import typings.csstype.mod._TimingFunction
+import typings.csstype.mod._TopProperty
+import typings.csstype.mod._TouchActionProperty
+import typings.csstype.mod._TrackBreadth
+import typings.csstype.mod._TransformOriginProperty
+import typings.csstype.mod._TransformProperty
+import typings.csstype.mod._TransitionPropertyProperty
+import typings.csstype.mod._TranslateProperty
+import typings.csstype.mod._VerticalAlignProperty
+import typings.csstype.mod._WebkitBoxReflectProperty
+import typings.csstype.mod._WebkitLineClampProperty
+import typings.csstype.mod._WebkitMaskClipProperty
+import typings.csstype.mod._WebkitMaskImageProperty
+import typings.csstype.mod._WebkitMaskOriginProperty
+import typings.csstype.mod._WebkitMaskPositionXProperty
+import typings.csstype.mod._WebkitMaskPositionYProperty
+import typings.csstype.mod._WebkitMaskProperty
+import typings.csstype.mod._WidthProperty
+import typings.csstype.mod._WillChangeProperty
+import typings.csstype.mod._WordSpacingProperty
+import typings.csstype.mod._ZIndexProperty
+import typings.csstype.mod._ZoomProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -740,552 +740,6 @@ object csstypeStrings {
   sealed trait `-webkit-sticky` extends PositionProperty
   
   @js.native
-  sealed trait `:-moz-any()`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:-moz-any-link`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:-moz-dir`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:-moz-focusring`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:-moz-full-screen`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:-moz-placeholder`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:-moz-read-only`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:-moz-read-write`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:-ms-fullscreen`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:-ms-input-placeholder`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:-webkit-any()`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:-webkit-any-link`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:-webkit-full-screen`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-moz-placeholder`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-moz-progress-bar`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-moz-range-progress`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-moz-range-thumb`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-moz-range-track`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-moz-selection`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-backdrop`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-browse`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-check`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-clear`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-fill`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-fill-lower`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-fill-upper`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-input-placeholder`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-reveal`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-thumb`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-ticks-after`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-ticks-before`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-tooltip`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-track`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-ms-value`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-webkit-backdrop`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-webkit-input-placeholder`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-webkit-progress-bar`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-webkit-progress-inner-value`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-webkit-progress-value`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-webkit-slider-runnable-track`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::-webkit-slider-thumb`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::after`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::backdrop`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::before`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::cue`
-    extends AdvancedPseudos
-       with Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::first-letter`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::first-line`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::grammar-error`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::marker`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::part`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `::placeholder`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::selection`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `::slotted`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `::spelling-error`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:active`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:after`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:any-link`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:before`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:blank`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:checked`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:default`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:defined`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:dir`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:disabled`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:empty`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:enabled`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:first`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:first-child`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:first-letter`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:first-line`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:first-of-type`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:focus`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:focus-visible`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:focus-within`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:fullscreen`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:has`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:host`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:host-context`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:hover`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:in-range`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:indeterminate`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:invalid`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:is`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:lang`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:last-child`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:last-of-type`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:left`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:link`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:matches()`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:not`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:nth-child`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:nth-last-child`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:nth-last-of-type`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:nth-of-type`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
-  sealed trait `:only-child`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:only-of-type`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:optional`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:out-of-range`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:placeholder-shown`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:read-only`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:read-write`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:required`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:right`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:root`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:scope`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:target`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:valid`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:visited`
-    extends Pseudos
-       with SimplePseudos
-  
-  @js.native
-  sealed trait `:where`
-    extends AdvancedPseudos
-       with Pseudos
-  
-  @js.native
   sealed trait `@charset` extends AtRules
   
   @js.native
@@ -1347,6 +801,552 @@ object csstypeStrings {
   
   @js.native
   sealed trait CaptionText extends DeprecatedSystemColor
+  
+  @js.native
+  sealed trait `Colon-moz-any-link`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colon-moz-anyLeftparenthesisRightparenthesis`
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `Colon-moz-dir`
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `Colon-moz-focusring`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colon-moz-full-screen`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colon-moz-placeholder`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colon-moz-read-only`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colon-moz-read-write`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colon-ms-fullscreen`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colon-ms-input-placeholder`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colon-webkit-any-link`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colon-webkit-anyLeftparenthesisRightparenthesis`
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `Colon-webkit-full-screen`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-moz-placeholder`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-moz-progress-bar`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-moz-range-progress`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-moz-range-thumb`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-moz-range-track`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-moz-selection`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-backdrop`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-browse`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-check`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-clear`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-fill`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-fill-lower`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-fill-upper`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-input-placeholder`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-reveal`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-thumb`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-ticks-after`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-ticks-before`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-tooltip`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-track`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-ms-value`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-webkit-backdrop`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-webkit-input-placeholder`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-webkit-progress-bar`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-webkit-progress-inner-value`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-webkit-progress-value`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-webkit-slider-runnable-track`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColon-webkit-slider-thumb`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait ColonColonafter
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait ColonColonbackdrop
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait ColonColonbefore
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait ColonColoncue
+    extends AdvancedPseudos
+       with Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColonfirst-letter`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColonfirst-line`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `ColonColongrammar-error`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait ColonColonmarker
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait ColonColonpart
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait ColonColonplaceholder
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait ColonColonselection
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait ColonColonslotted
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `ColonColonspelling-error`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonactive
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonafter
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonany-link`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonbefore
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonblank
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonchecked
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colondefault
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colondefined
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colondir
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait Colondisabled
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonempty
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonenabled
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonfirst
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonfirst-child`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonfirst-letter`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonfirst-line`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonfirst-of-type`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonfocus
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonfocus-visible`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonfocus-within`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonfullscreen
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonhas
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait Colonhost
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `Colonhost-context`
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait Colonhover
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonin-range`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonindeterminate
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Coloninvalid
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonis
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait Colonlang
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `Colonlast-child`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonlast-of-type`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonleft
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonlink
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait ColonmatchesLeftparenthesisRightparenthesis
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait Colonnot
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `Colonnth-child`
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `Colonnth-last-child`
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `Colonnth-last-of-type`
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `Colonnth-of-type`
+    extends AdvancedPseudos
+       with Pseudos
+  
+  @js.native
+  sealed trait `Colononly-child`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colononly-of-type`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonoptional
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonout-of-range`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonplaceholder-shown`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonread-only`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait `Colonread-write`
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonrequired
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonright
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonroot
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonscope
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colontarget
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonvalid
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonvisited
+    extends Pseudos
+       with SimplePseudos
+  
+  @js.native
+  sealed trait Colonwhere
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
   sealed trait GrayText extends DeprecatedSystemColor
@@ -4945,8 +4945,8 @@ object csstypeStrings {
   sealed trait `non-scaling-stroke` extends VectorEffectProperty
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.csstype.csstypeMod._AnimationProperty because Already inherited
-  - typings.csstype.csstypeMod._SingleAnimation because Already inherited */ @js.native
+  - typings.csstype.mod._AnimationProperty because Already inherited
+  - typings.csstype.mod._SingleAnimation because Already inherited */ @js.native
   sealed trait none
     extends LineStyle
        with AppearanceProperty
@@ -6816,224 +6816,6 @@ object csstypeStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `:-moz-any()`: `:-moz-any()` = ":-moz-any()".asInstanceOf[`:-moz-any()`]
-  @scala.inline
-  def `:-moz-any-link`: `:-moz-any-link` = ":-moz-any-link".asInstanceOf[`:-moz-any-link`]
-  @scala.inline
-  def `:-moz-dir`: `:-moz-dir` = ":-moz-dir".asInstanceOf[`:-moz-dir`]
-  @scala.inline
-  def `:-moz-focusring`: `:-moz-focusring` = ":-moz-focusring".asInstanceOf[`:-moz-focusring`]
-  @scala.inline
-  def `:-moz-full-screen`: `:-moz-full-screen` = ":-moz-full-screen".asInstanceOf[`:-moz-full-screen`]
-  @scala.inline
-  def `:-moz-placeholder`: `:-moz-placeholder` = ":-moz-placeholder".asInstanceOf[`:-moz-placeholder`]
-  @scala.inline
-  def `:-moz-read-only`: `:-moz-read-only` = ":-moz-read-only".asInstanceOf[`:-moz-read-only`]
-  @scala.inline
-  def `:-moz-read-write`: `:-moz-read-write` = ":-moz-read-write".asInstanceOf[`:-moz-read-write`]
-  @scala.inline
-  def `:-ms-fullscreen`: `:-ms-fullscreen` = ":-ms-fullscreen".asInstanceOf[`:-ms-fullscreen`]
-  @scala.inline
-  def `:-ms-input-placeholder`: `:-ms-input-placeholder` = ":-ms-input-placeholder".asInstanceOf[`:-ms-input-placeholder`]
-  @scala.inline
-  def `:-webkit-any()`: `:-webkit-any()` = ":-webkit-any()".asInstanceOf[`:-webkit-any()`]
-  @scala.inline
-  def `:-webkit-any-link`: `:-webkit-any-link` = ":-webkit-any-link".asInstanceOf[`:-webkit-any-link`]
-  @scala.inline
-  def `:-webkit-full-screen`: `:-webkit-full-screen` = ":-webkit-full-screen".asInstanceOf[`:-webkit-full-screen`]
-  @scala.inline
-  def `::-moz-placeholder`: `::-moz-placeholder` = "::-moz-placeholder".asInstanceOf[`::-moz-placeholder`]
-  @scala.inline
-  def `::-moz-progress-bar`: `::-moz-progress-bar` = "::-moz-progress-bar".asInstanceOf[`::-moz-progress-bar`]
-  @scala.inline
-  def `::-moz-range-progress`: `::-moz-range-progress` = "::-moz-range-progress".asInstanceOf[`::-moz-range-progress`]
-  @scala.inline
-  def `::-moz-range-thumb`: `::-moz-range-thumb` = "::-moz-range-thumb".asInstanceOf[`::-moz-range-thumb`]
-  @scala.inline
-  def `::-moz-range-track`: `::-moz-range-track` = "::-moz-range-track".asInstanceOf[`::-moz-range-track`]
-  @scala.inline
-  def `::-moz-selection`: `::-moz-selection` = "::-moz-selection".asInstanceOf[`::-moz-selection`]
-  @scala.inline
-  def `::-ms-backdrop`: `::-ms-backdrop` = "::-ms-backdrop".asInstanceOf[`::-ms-backdrop`]
-  @scala.inline
-  def `::-ms-browse`: `::-ms-browse` = "::-ms-browse".asInstanceOf[`::-ms-browse`]
-  @scala.inline
-  def `::-ms-check`: `::-ms-check` = "::-ms-check".asInstanceOf[`::-ms-check`]
-  @scala.inline
-  def `::-ms-clear`: `::-ms-clear` = "::-ms-clear".asInstanceOf[`::-ms-clear`]
-  @scala.inline
-  def `::-ms-fill`: `::-ms-fill` = "::-ms-fill".asInstanceOf[`::-ms-fill`]
-  @scala.inline
-  def `::-ms-fill-lower`: `::-ms-fill-lower` = "::-ms-fill-lower".asInstanceOf[`::-ms-fill-lower`]
-  @scala.inline
-  def `::-ms-fill-upper`: `::-ms-fill-upper` = "::-ms-fill-upper".asInstanceOf[`::-ms-fill-upper`]
-  @scala.inline
-  def `::-ms-input-placeholder`: `::-ms-input-placeholder` = "::-ms-input-placeholder".asInstanceOf[`::-ms-input-placeholder`]
-  @scala.inline
-  def `::-ms-reveal`: `::-ms-reveal` = "::-ms-reveal".asInstanceOf[`::-ms-reveal`]
-  @scala.inline
-  def `::-ms-thumb`: `::-ms-thumb` = "::-ms-thumb".asInstanceOf[`::-ms-thumb`]
-  @scala.inline
-  def `::-ms-ticks-after`: `::-ms-ticks-after` = "::-ms-ticks-after".asInstanceOf[`::-ms-ticks-after`]
-  @scala.inline
-  def `::-ms-ticks-before`: `::-ms-ticks-before` = "::-ms-ticks-before".asInstanceOf[`::-ms-ticks-before`]
-  @scala.inline
-  def `::-ms-tooltip`: `::-ms-tooltip` = "::-ms-tooltip".asInstanceOf[`::-ms-tooltip`]
-  @scala.inline
-  def `::-ms-track`: `::-ms-track` = "::-ms-track".asInstanceOf[`::-ms-track`]
-  @scala.inline
-  def `::-ms-value`: `::-ms-value` = "::-ms-value".asInstanceOf[`::-ms-value`]
-  @scala.inline
-  def `::-webkit-backdrop`: `::-webkit-backdrop` = "::-webkit-backdrop".asInstanceOf[`::-webkit-backdrop`]
-  @scala.inline
-  def `::-webkit-input-placeholder`: `::-webkit-input-placeholder` = "::-webkit-input-placeholder".asInstanceOf[`::-webkit-input-placeholder`]
-  @scala.inline
-  def `::-webkit-progress-bar`: `::-webkit-progress-bar` = "::-webkit-progress-bar".asInstanceOf[`::-webkit-progress-bar`]
-  @scala.inline
-  def `::-webkit-progress-inner-value`: `::-webkit-progress-inner-value` = "::-webkit-progress-inner-value".asInstanceOf[`::-webkit-progress-inner-value`]
-  @scala.inline
-  def `::-webkit-progress-value`: `::-webkit-progress-value` = "::-webkit-progress-value".asInstanceOf[`::-webkit-progress-value`]
-  @scala.inline
-  def `::-webkit-slider-runnable-track`: `::-webkit-slider-runnable-track` = "::-webkit-slider-runnable-track".asInstanceOf[`::-webkit-slider-runnable-track`]
-  @scala.inline
-  def `::-webkit-slider-thumb`: `::-webkit-slider-thumb` = "::-webkit-slider-thumb".asInstanceOf[`::-webkit-slider-thumb`]
-  @scala.inline
-  def `::after`: `::after` = "::after".asInstanceOf[`::after`]
-  @scala.inline
-  def `::backdrop`: `::backdrop` = "::backdrop".asInstanceOf[`::backdrop`]
-  @scala.inline
-  def `::before`: `::before` = "::before".asInstanceOf[`::before`]
-  @scala.inline
-  def `::cue`: `::cue` = "::cue".asInstanceOf[`::cue`]
-  @scala.inline
-  def `::first-letter`: `::first-letter` = "::first-letter".asInstanceOf[`::first-letter`]
-  @scala.inline
-  def `::first-line`: `::first-line` = "::first-line".asInstanceOf[`::first-line`]
-  @scala.inline
-  def `::grammar-error`: `::grammar-error` = "::grammar-error".asInstanceOf[`::grammar-error`]
-  @scala.inline
-  def `::marker`: `::marker` = "::marker".asInstanceOf[`::marker`]
-  @scala.inline
-  def `::part`: `::part` = "::part".asInstanceOf[`::part`]
-  @scala.inline
-  def `::placeholder`: `::placeholder` = "::placeholder".asInstanceOf[`::placeholder`]
-  @scala.inline
-  def `::selection`: `::selection` = "::selection".asInstanceOf[`::selection`]
-  @scala.inline
-  def `::slotted`: `::slotted` = "::slotted".asInstanceOf[`::slotted`]
-  @scala.inline
-  def `::spelling-error`: `::spelling-error` = "::spelling-error".asInstanceOf[`::spelling-error`]
-  @scala.inline
-  def `:active`: `:active` = ":active".asInstanceOf[`:active`]
-  @scala.inline
-  def `:after`: `:after` = ":after".asInstanceOf[`:after`]
-  @scala.inline
-  def `:any-link`: `:any-link` = ":any-link".asInstanceOf[`:any-link`]
-  @scala.inline
-  def `:before`: `:before` = ":before".asInstanceOf[`:before`]
-  @scala.inline
-  def `:blank`: `:blank` = ":blank".asInstanceOf[`:blank`]
-  @scala.inline
-  def `:checked`: `:checked` = ":checked".asInstanceOf[`:checked`]
-  @scala.inline
-  def `:default`: `:default` = ":default".asInstanceOf[`:default`]
-  @scala.inline
-  def `:defined`: `:defined` = ":defined".asInstanceOf[`:defined`]
-  @scala.inline
-  def `:dir`: `:dir` = ":dir".asInstanceOf[`:dir`]
-  @scala.inline
-  def `:disabled`: `:disabled` = ":disabled".asInstanceOf[`:disabled`]
-  @scala.inline
-  def `:empty`: `:empty` = ":empty".asInstanceOf[`:empty`]
-  @scala.inline
-  def `:enabled`: `:enabled` = ":enabled".asInstanceOf[`:enabled`]
-  @scala.inline
-  def `:first`: `:first` = ":first".asInstanceOf[`:first`]
-  @scala.inline
-  def `:first-child`: `:first-child` = ":first-child".asInstanceOf[`:first-child`]
-  @scala.inline
-  def `:first-letter`: `:first-letter` = ":first-letter".asInstanceOf[`:first-letter`]
-  @scala.inline
-  def `:first-line`: `:first-line` = ":first-line".asInstanceOf[`:first-line`]
-  @scala.inline
-  def `:first-of-type`: `:first-of-type` = ":first-of-type".asInstanceOf[`:first-of-type`]
-  @scala.inline
-  def `:focus`: `:focus` = ":focus".asInstanceOf[`:focus`]
-  @scala.inline
-  def `:focus-visible`: `:focus-visible` = ":focus-visible".asInstanceOf[`:focus-visible`]
-  @scala.inline
-  def `:focus-within`: `:focus-within` = ":focus-within".asInstanceOf[`:focus-within`]
-  @scala.inline
-  def `:fullscreen`: `:fullscreen` = ":fullscreen".asInstanceOf[`:fullscreen`]
-  @scala.inline
-  def `:has`: `:has` = ":has".asInstanceOf[`:has`]
-  @scala.inline
-  def `:host`: `:host` = ":host".asInstanceOf[`:host`]
-  @scala.inline
-  def `:host-context`: `:host-context` = ":host-context".asInstanceOf[`:host-context`]
-  @scala.inline
-  def `:hover`: `:hover` = ":hover".asInstanceOf[`:hover`]
-  @scala.inline
-  def `:in-range`: `:in-range` = ":in-range".asInstanceOf[`:in-range`]
-  @scala.inline
-  def `:indeterminate`: `:indeterminate` = ":indeterminate".asInstanceOf[`:indeterminate`]
-  @scala.inline
-  def `:invalid`: `:invalid` = ":invalid".asInstanceOf[`:invalid`]
-  @scala.inline
-  def `:is`: `:is` = ":is".asInstanceOf[`:is`]
-  @scala.inline
-  def `:lang`: `:lang` = ":lang".asInstanceOf[`:lang`]
-  @scala.inline
-  def `:last-child`: `:last-child` = ":last-child".asInstanceOf[`:last-child`]
-  @scala.inline
-  def `:last-of-type`: `:last-of-type` = ":last-of-type".asInstanceOf[`:last-of-type`]
-  @scala.inline
-  def `:left`: `:left` = ":left".asInstanceOf[`:left`]
-  @scala.inline
-  def `:link`: `:link` = ":link".asInstanceOf[`:link`]
-  @scala.inline
-  def `:matches()`: `:matches()` = ":matches()".asInstanceOf[`:matches()`]
-  @scala.inline
-  def `:not`: `:not` = ":not".asInstanceOf[`:not`]
-  @scala.inline
-  def `:nth-child`: `:nth-child` = ":nth-child".asInstanceOf[`:nth-child`]
-  @scala.inline
-  def `:nth-last-child`: `:nth-last-child` = ":nth-last-child".asInstanceOf[`:nth-last-child`]
-  @scala.inline
-  def `:nth-last-of-type`: `:nth-last-of-type` = ":nth-last-of-type".asInstanceOf[`:nth-last-of-type`]
-  @scala.inline
-  def `:nth-of-type`: `:nth-of-type` = ":nth-of-type".asInstanceOf[`:nth-of-type`]
-  @scala.inline
-  def `:only-child`: `:only-child` = ":only-child".asInstanceOf[`:only-child`]
-  @scala.inline
-  def `:only-of-type`: `:only-of-type` = ":only-of-type".asInstanceOf[`:only-of-type`]
-  @scala.inline
-  def `:optional`: `:optional` = ":optional".asInstanceOf[`:optional`]
-  @scala.inline
-  def `:out-of-range`: `:out-of-range` = ":out-of-range".asInstanceOf[`:out-of-range`]
-  @scala.inline
-  def `:placeholder-shown`: `:placeholder-shown` = ":placeholder-shown".asInstanceOf[`:placeholder-shown`]
-  @scala.inline
-  def `:read-only`: `:read-only` = ":read-only".asInstanceOf[`:read-only`]
-  @scala.inline
-  def `:read-write`: `:read-write` = ":read-write".asInstanceOf[`:read-write`]
-  @scala.inline
-  def `:required`: `:required` = ":required".asInstanceOf[`:required`]
-  @scala.inline
-  def `:right`: `:right` = ":right".asInstanceOf[`:right`]
-  @scala.inline
-  def `:root`: `:root` = ":root".asInstanceOf[`:root`]
-  @scala.inline
-  def `:scope`: `:scope` = ":scope".asInstanceOf[`:scope`]
-  @scala.inline
-  def `:target`: `:target` = ":target".asInstanceOf[`:target`]
-  @scala.inline
-  def `:valid`: `:valid` = ":valid".asInstanceOf[`:valid`]
-  @scala.inline
-  def `:visited`: `:visited` = ":visited".asInstanceOf[`:visited`]
-  @scala.inline
-  def `:where`: `:where` = ":where".asInstanceOf[`:where`]
-  @scala.inline
   def `@charset`: `@charset` = "@charset".asInstanceOf[`@charset`]
   @scala.inline
   def `@counter-style`: `@counter-style` = "@counter-style".asInstanceOf[`@counter-style`]
@@ -7075,6 +6857,224 @@ object csstypeStrings {
   def ButtonText: ButtonText = "ButtonText".asInstanceOf[ButtonText]
   @scala.inline
   def CaptionText: CaptionText = "CaptionText".asInstanceOf[CaptionText]
+  @scala.inline
+  def `Colon-moz-any-link`: `Colon-moz-any-link` = ":-moz-any-link".asInstanceOf[`Colon-moz-any-link`]
+  @scala.inline
+  def `Colon-moz-anyLeftparenthesisRightparenthesis`: `Colon-moz-anyLeftparenthesisRightparenthesis` = ":-moz-any()".asInstanceOf[`Colon-moz-anyLeftparenthesisRightparenthesis`]
+  @scala.inline
+  def `Colon-moz-dir`: `Colon-moz-dir` = ":-moz-dir".asInstanceOf[`Colon-moz-dir`]
+  @scala.inline
+  def `Colon-moz-focusring`: `Colon-moz-focusring` = ":-moz-focusring".asInstanceOf[`Colon-moz-focusring`]
+  @scala.inline
+  def `Colon-moz-full-screen`: `Colon-moz-full-screen` = ":-moz-full-screen".asInstanceOf[`Colon-moz-full-screen`]
+  @scala.inline
+  def `Colon-moz-placeholder`: `Colon-moz-placeholder` = ":-moz-placeholder".asInstanceOf[`Colon-moz-placeholder`]
+  @scala.inline
+  def `Colon-moz-read-only`: `Colon-moz-read-only` = ":-moz-read-only".asInstanceOf[`Colon-moz-read-only`]
+  @scala.inline
+  def `Colon-moz-read-write`: `Colon-moz-read-write` = ":-moz-read-write".asInstanceOf[`Colon-moz-read-write`]
+  @scala.inline
+  def `Colon-ms-fullscreen`: `Colon-ms-fullscreen` = ":-ms-fullscreen".asInstanceOf[`Colon-ms-fullscreen`]
+  @scala.inline
+  def `Colon-ms-input-placeholder`: `Colon-ms-input-placeholder` = ":-ms-input-placeholder".asInstanceOf[`Colon-ms-input-placeholder`]
+  @scala.inline
+  def `Colon-webkit-any-link`: `Colon-webkit-any-link` = ":-webkit-any-link".asInstanceOf[`Colon-webkit-any-link`]
+  @scala.inline
+  def `Colon-webkit-anyLeftparenthesisRightparenthesis`: `Colon-webkit-anyLeftparenthesisRightparenthesis` = ":-webkit-any()".asInstanceOf[`Colon-webkit-anyLeftparenthesisRightparenthesis`]
+  @scala.inline
+  def `Colon-webkit-full-screen`: `Colon-webkit-full-screen` = ":-webkit-full-screen".asInstanceOf[`Colon-webkit-full-screen`]
+  @scala.inline
+  def `ColonColon-moz-placeholder`: `ColonColon-moz-placeholder` = "::-moz-placeholder".asInstanceOf[`ColonColon-moz-placeholder`]
+  @scala.inline
+  def `ColonColon-moz-progress-bar`: `ColonColon-moz-progress-bar` = "::-moz-progress-bar".asInstanceOf[`ColonColon-moz-progress-bar`]
+  @scala.inline
+  def `ColonColon-moz-range-progress`: `ColonColon-moz-range-progress` = "::-moz-range-progress".asInstanceOf[`ColonColon-moz-range-progress`]
+  @scala.inline
+  def `ColonColon-moz-range-thumb`: `ColonColon-moz-range-thumb` = "::-moz-range-thumb".asInstanceOf[`ColonColon-moz-range-thumb`]
+  @scala.inline
+  def `ColonColon-moz-range-track`: `ColonColon-moz-range-track` = "::-moz-range-track".asInstanceOf[`ColonColon-moz-range-track`]
+  @scala.inline
+  def `ColonColon-moz-selection`: `ColonColon-moz-selection` = "::-moz-selection".asInstanceOf[`ColonColon-moz-selection`]
+  @scala.inline
+  def `ColonColon-ms-backdrop`: `ColonColon-ms-backdrop` = "::-ms-backdrop".asInstanceOf[`ColonColon-ms-backdrop`]
+  @scala.inline
+  def `ColonColon-ms-browse`: `ColonColon-ms-browse` = "::-ms-browse".asInstanceOf[`ColonColon-ms-browse`]
+  @scala.inline
+  def `ColonColon-ms-check`: `ColonColon-ms-check` = "::-ms-check".asInstanceOf[`ColonColon-ms-check`]
+  @scala.inline
+  def `ColonColon-ms-clear`: `ColonColon-ms-clear` = "::-ms-clear".asInstanceOf[`ColonColon-ms-clear`]
+  @scala.inline
+  def `ColonColon-ms-fill`: `ColonColon-ms-fill` = "::-ms-fill".asInstanceOf[`ColonColon-ms-fill`]
+  @scala.inline
+  def `ColonColon-ms-fill-lower`: `ColonColon-ms-fill-lower` = "::-ms-fill-lower".asInstanceOf[`ColonColon-ms-fill-lower`]
+  @scala.inline
+  def `ColonColon-ms-fill-upper`: `ColonColon-ms-fill-upper` = "::-ms-fill-upper".asInstanceOf[`ColonColon-ms-fill-upper`]
+  @scala.inline
+  def `ColonColon-ms-input-placeholder`: `ColonColon-ms-input-placeholder` = "::-ms-input-placeholder".asInstanceOf[`ColonColon-ms-input-placeholder`]
+  @scala.inline
+  def `ColonColon-ms-reveal`: `ColonColon-ms-reveal` = "::-ms-reveal".asInstanceOf[`ColonColon-ms-reveal`]
+  @scala.inline
+  def `ColonColon-ms-thumb`: `ColonColon-ms-thumb` = "::-ms-thumb".asInstanceOf[`ColonColon-ms-thumb`]
+  @scala.inline
+  def `ColonColon-ms-ticks-after`: `ColonColon-ms-ticks-after` = "::-ms-ticks-after".asInstanceOf[`ColonColon-ms-ticks-after`]
+  @scala.inline
+  def `ColonColon-ms-ticks-before`: `ColonColon-ms-ticks-before` = "::-ms-ticks-before".asInstanceOf[`ColonColon-ms-ticks-before`]
+  @scala.inline
+  def `ColonColon-ms-tooltip`: `ColonColon-ms-tooltip` = "::-ms-tooltip".asInstanceOf[`ColonColon-ms-tooltip`]
+  @scala.inline
+  def `ColonColon-ms-track`: `ColonColon-ms-track` = "::-ms-track".asInstanceOf[`ColonColon-ms-track`]
+  @scala.inline
+  def `ColonColon-ms-value`: `ColonColon-ms-value` = "::-ms-value".asInstanceOf[`ColonColon-ms-value`]
+  @scala.inline
+  def `ColonColon-webkit-backdrop`: `ColonColon-webkit-backdrop` = "::-webkit-backdrop".asInstanceOf[`ColonColon-webkit-backdrop`]
+  @scala.inline
+  def `ColonColon-webkit-input-placeholder`: `ColonColon-webkit-input-placeholder` = "::-webkit-input-placeholder".asInstanceOf[`ColonColon-webkit-input-placeholder`]
+  @scala.inline
+  def `ColonColon-webkit-progress-bar`: `ColonColon-webkit-progress-bar` = "::-webkit-progress-bar".asInstanceOf[`ColonColon-webkit-progress-bar`]
+  @scala.inline
+  def `ColonColon-webkit-progress-inner-value`: `ColonColon-webkit-progress-inner-value` = "::-webkit-progress-inner-value".asInstanceOf[`ColonColon-webkit-progress-inner-value`]
+  @scala.inline
+  def `ColonColon-webkit-progress-value`: `ColonColon-webkit-progress-value` = "::-webkit-progress-value".asInstanceOf[`ColonColon-webkit-progress-value`]
+  @scala.inline
+  def `ColonColon-webkit-slider-runnable-track`: `ColonColon-webkit-slider-runnable-track` = "::-webkit-slider-runnable-track".asInstanceOf[`ColonColon-webkit-slider-runnable-track`]
+  @scala.inline
+  def `ColonColon-webkit-slider-thumb`: `ColonColon-webkit-slider-thumb` = "::-webkit-slider-thumb".asInstanceOf[`ColonColon-webkit-slider-thumb`]
+  @scala.inline
+  def ColonColonafter: ColonColonafter = "::after".asInstanceOf[ColonColonafter]
+  @scala.inline
+  def ColonColonbackdrop: ColonColonbackdrop = "::backdrop".asInstanceOf[ColonColonbackdrop]
+  @scala.inline
+  def ColonColonbefore: ColonColonbefore = "::before".asInstanceOf[ColonColonbefore]
+  @scala.inline
+  def ColonColoncue: ColonColoncue = "::cue".asInstanceOf[ColonColoncue]
+  @scala.inline
+  def `ColonColonfirst-letter`: `ColonColonfirst-letter` = "::first-letter".asInstanceOf[`ColonColonfirst-letter`]
+  @scala.inline
+  def `ColonColonfirst-line`: `ColonColonfirst-line` = "::first-line".asInstanceOf[`ColonColonfirst-line`]
+  @scala.inline
+  def `ColonColongrammar-error`: `ColonColongrammar-error` = "::grammar-error".asInstanceOf[`ColonColongrammar-error`]
+  @scala.inline
+  def ColonColonmarker: ColonColonmarker = "::marker".asInstanceOf[ColonColonmarker]
+  @scala.inline
+  def ColonColonpart: ColonColonpart = "::part".asInstanceOf[ColonColonpart]
+  @scala.inline
+  def ColonColonplaceholder: ColonColonplaceholder = "::placeholder".asInstanceOf[ColonColonplaceholder]
+  @scala.inline
+  def ColonColonselection: ColonColonselection = "::selection".asInstanceOf[ColonColonselection]
+  @scala.inline
+  def ColonColonslotted: ColonColonslotted = "::slotted".asInstanceOf[ColonColonslotted]
+  @scala.inline
+  def `ColonColonspelling-error`: `ColonColonspelling-error` = "::spelling-error".asInstanceOf[`ColonColonspelling-error`]
+  @scala.inline
+  def Colonactive: Colonactive = ":active".asInstanceOf[Colonactive]
+  @scala.inline
+  def Colonafter: Colonafter = ":after".asInstanceOf[Colonafter]
+  @scala.inline
+  def `Colonany-link`: `Colonany-link` = ":any-link".asInstanceOf[`Colonany-link`]
+  @scala.inline
+  def Colonbefore: Colonbefore = ":before".asInstanceOf[Colonbefore]
+  @scala.inline
+  def Colonblank: Colonblank = ":blank".asInstanceOf[Colonblank]
+  @scala.inline
+  def Colonchecked: Colonchecked = ":checked".asInstanceOf[Colonchecked]
+  @scala.inline
+  def Colondefault: Colondefault = ":default".asInstanceOf[Colondefault]
+  @scala.inline
+  def Colondefined: Colondefined = ":defined".asInstanceOf[Colondefined]
+  @scala.inline
+  def Colondir: Colondir = ":dir".asInstanceOf[Colondir]
+  @scala.inline
+  def Colondisabled: Colondisabled = ":disabled".asInstanceOf[Colondisabled]
+  @scala.inline
+  def Colonempty: Colonempty = ":empty".asInstanceOf[Colonempty]
+  @scala.inline
+  def Colonenabled: Colonenabled = ":enabled".asInstanceOf[Colonenabled]
+  @scala.inline
+  def Colonfirst: Colonfirst = ":first".asInstanceOf[Colonfirst]
+  @scala.inline
+  def `Colonfirst-child`: `Colonfirst-child` = ":first-child".asInstanceOf[`Colonfirst-child`]
+  @scala.inline
+  def `Colonfirst-letter`: `Colonfirst-letter` = ":first-letter".asInstanceOf[`Colonfirst-letter`]
+  @scala.inline
+  def `Colonfirst-line`: `Colonfirst-line` = ":first-line".asInstanceOf[`Colonfirst-line`]
+  @scala.inline
+  def `Colonfirst-of-type`: `Colonfirst-of-type` = ":first-of-type".asInstanceOf[`Colonfirst-of-type`]
+  @scala.inline
+  def Colonfocus: Colonfocus = ":focus".asInstanceOf[Colonfocus]
+  @scala.inline
+  def `Colonfocus-visible`: `Colonfocus-visible` = ":focus-visible".asInstanceOf[`Colonfocus-visible`]
+  @scala.inline
+  def `Colonfocus-within`: `Colonfocus-within` = ":focus-within".asInstanceOf[`Colonfocus-within`]
+  @scala.inline
+  def Colonfullscreen: Colonfullscreen = ":fullscreen".asInstanceOf[Colonfullscreen]
+  @scala.inline
+  def Colonhas: Colonhas = ":has".asInstanceOf[Colonhas]
+  @scala.inline
+  def Colonhost: Colonhost = ":host".asInstanceOf[Colonhost]
+  @scala.inline
+  def `Colonhost-context`: `Colonhost-context` = ":host-context".asInstanceOf[`Colonhost-context`]
+  @scala.inline
+  def Colonhover: Colonhover = ":hover".asInstanceOf[Colonhover]
+  @scala.inline
+  def `Colonin-range`: `Colonin-range` = ":in-range".asInstanceOf[`Colonin-range`]
+  @scala.inline
+  def Colonindeterminate: Colonindeterminate = ":indeterminate".asInstanceOf[Colonindeterminate]
+  @scala.inline
+  def Coloninvalid: Coloninvalid = ":invalid".asInstanceOf[Coloninvalid]
+  @scala.inline
+  def Colonis: Colonis = ":is".asInstanceOf[Colonis]
+  @scala.inline
+  def Colonlang: Colonlang = ":lang".asInstanceOf[Colonlang]
+  @scala.inline
+  def `Colonlast-child`: `Colonlast-child` = ":last-child".asInstanceOf[`Colonlast-child`]
+  @scala.inline
+  def `Colonlast-of-type`: `Colonlast-of-type` = ":last-of-type".asInstanceOf[`Colonlast-of-type`]
+  @scala.inline
+  def Colonleft: Colonleft = ":left".asInstanceOf[Colonleft]
+  @scala.inline
+  def Colonlink: Colonlink = ":link".asInstanceOf[Colonlink]
+  @scala.inline
+  def ColonmatchesLeftparenthesisRightparenthesis: ColonmatchesLeftparenthesisRightparenthesis = ":matches()".asInstanceOf[ColonmatchesLeftparenthesisRightparenthesis]
+  @scala.inline
+  def Colonnot: Colonnot = ":not".asInstanceOf[Colonnot]
+  @scala.inline
+  def `Colonnth-child`: `Colonnth-child` = ":nth-child".asInstanceOf[`Colonnth-child`]
+  @scala.inline
+  def `Colonnth-last-child`: `Colonnth-last-child` = ":nth-last-child".asInstanceOf[`Colonnth-last-child`]
+  @scala.inline
+  def `Colonnth-last-of-type`: `Colonnth-last-of-type` = ":nth-last-of-type".asInstanceOf[`Colonnth-last-of-type`]
+  @scala.inline
+  def `Colonnth-of-type`: `Colonnth-of-type` = ":nth-of-type".asInstanceOf[`Colonnth-of-type`]
+  @scala.inline
+  def `Colononly-child`: `Colononly-child` = ":only-child".asInstanceOf[`Colononly-child`]
+  @scala.inline
+  def `Colononly-of-type`: `Colononly-of-type` = ":only-of-type".asInstanceOf[`Colononly-of-type`]
+  @scala.inline
+  def Colonoptional: Colonoptional = ":optional".asInstanceOf[Colonoptional]
+  @scala.inline
+  def `Colonout-of-range`: `Colonout-of-range` = ":out-of-range".asInstanceOf[`Colonout-of-range`]
+  @scala.inline
+  def `Colonplaceholder-shown`: `Colonplaceholder-shown` = ":placeholder-shown".asInstanceOf[`Colonplaceholder-shown`]
+  @scala.inline
+  def `Colonread-only`: `Colonread-only` = ":read-only".asInstanceOf[`Colonread-only`]
+  @scala.inline
+  def `Colonread-write`: `Colonread-write` = ":read-write".asInstanceOf[`Colonread-write`]
+  @scala.inline
+  def Colonrequired: Colonrequired = ":required".asInstanceOf[Colonrequired]
+  @scala.inline
+  def Colonright: Colonright = ":right".asInstanceOf[Colonright]
+  @scala.inline
+  def Colonroot: Colonroot = ":root".asInstanceOf[Colonroot]
+  @scala.inline
+  def Colonscope: Colonscope = ":scope".asInstanceOf[Colonscope]
+  @scala.inline
+  def Colontarget: Colontarget = ":target".asInstanceOf[Colontarget]
+  @scala.inline
+  def Colonvalid: Colonvalid = ":valid".asInstanceOf[Colonvalid]
+  @scala.inline
+  def Colonvisited: Colonvisited = ":visited".asInstanceOf[Colonvisited]
+  @scala.inline
+  def Colonwhere: Colonwhere = ":where".asInstanceOf[Colonwhere]
   @scala.inline
   def GrayText: GrayText = "GrayText".asInstanceOf[GrayText]
   @scala.inline
